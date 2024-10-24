@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formularios en HTML</title>
+    </head>
+    <body>
+        <h1>Formularios con HTML</h1>
+        <p>Los formularios son una de las herramientas más importantes de HTML porque permiten a los usuarios enviar datos a un servidor. Con HTML5, los formularios han ganado nuevas funcionalidades que mejoran su usabilidad i validación.</p>
+        <p>Un formulario se crea con la etiqueta <b>&lt;form&gt;</b>, que actua como el contenedor de todos los elementos de entrada (texto, botones, selecciones, ...).</p>
+        <p>Cada campo del formulario se envia como datos a un servidor cuando el usuario lo envia.</p>
+        <table border="5" cellpadding="10" cellspacing="0">
+            <p>Ejemplo:</p>
+            <tp>
+                <td>
+                    <ul>
+                         &lt;form action="submit.php" method="POST"&gt;<br>
+                         &emsp;&lt;!-- Campos del formulario --&gt;<br>
+                         &lt;/form&gt;
+                    </ul>
+                </td>
+            </tp>
+        </table>
+        <h3>&lt;input&gt;</h3>
+        <p>La etiqueta <b>&lt;input&gt;</b> es el elemento más versátil para crear campos de entrada. El tipo de campo se define con el atributo <b>"type"</b></p>
+        <table border="5" cellpadding="10" cellspacing="0">
+            <p>Ejemplo:</p>
+            <tp>
+                <td>
+                    <ul>
+                         &lt;input type="text" name="nombre" placeholder="Escribe tu nombre"&gt;<br><br>
+                         &lt;input type="email" name="email" placeholder="Escribe tu correo"&gt;<br><br>
+                         &lt;input type="password" name="password" placeholder="Escribe tu contraseña"&gt;
+                    </ul>
+                </td>
+            </tp>
+        </table>
+        <p>
+            <!-- NO HACE FALTA QUE ESTEN DENTRO DE UN FORMULARIO PARA QUE APAREZCAN :D -->
+            <!-- <form action="" method=""> -->
+                <input type="text" name="nombre" placeholder="Escribe tu nombre">
+                <input type="email" name="email" placeholder="Escribe tu correo">
+                <input type="password" name="password" placeholder="Escribe tu contraseña">
+            <!-- </form> -->
+        </p>
+        <!--  -->
+        <h3>&lt;label&gt;</h3>
+        <p>La etiqueta <b>&lt;label&gt;</b> se utiliza para etiquetar campos de formulario i mejorar la accesibilidad.</p>
+        <table border="5" cellpadding="10" cellspacing="0">
+            <p>Ejemplo:</p>
+            <tp>
+                <td>
+                    <ul>
+                        &lt;label for="nombre"&gt;Nombre:&lt;/label&gt;<br>
+                        &lt;input type="text" id="nombre" name="nombre"&gt;
+                    </ul>
+                </td>
+            </tp>
+        </table>
+        <p>
+            <!-- <form action="" method=""> -->
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre">
+            <!-- </form> -->
+        </p>
+    </body>
+    <h3>&lt;checkboxes&gt;</h3>
+    <p>Las <b>checkboxes</b> permiten seleccionar diversas opciones independientes.</p>
+    <table border="5" cellpadding="10" cellspacing="0">
+        <p>Ejemplo:</p>
+        <tp>
+            <td>
+                <ul>
+                    &lt;label&gt;&lt;input type="checkbox" name="subscripcion" value="noticias"&gt; Suscribeme a las noticias&lt;/label&gt;<br>
+                    &lt;label&gt;&lt;input type="checkbox" name="subscripcion" value="ofertas"&gt; Subscribeme a las ofertas&lt;/label&gt;
+                </ul>
+            </td>
+        </tp>
+    </table>
+    <label><input type="checkbox" name="subscripcion" value="noticias"> Suscribeme a las noticias</label>
+    <label><input type="checkbox" name="subscripcion" value="ofertas"> Subscribeme a las ofertas</label>    
+</html>
