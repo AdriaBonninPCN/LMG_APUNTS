@@ -108,6 +108,58 @@
      <option value="valencia">Valencia</option>
     </select>
 
+    <h3>&lt;multiple&gt;</h3>
+    <p>El atriubto <b>&lt;multiple&gt;</b> se usa para listas desplegables de selección. Permite seleccionar múltiples opciones en una lista de selección.</p>
+    <table border="5" cellpadding="10" cellspacing="0">
+        <p>Ejemplo:</p>
+        <tp>
+            <td>
+                <ul>
+                    &lt;select name="intereses" multiple&gt;<br> 
+                    &lt;option value="programacion"&gt;Programación&lt;/option&gt;<br> 
+                    &lt;option value="diseno"&gt;Diseño&lt;/option&gt;<br>         
+                    &lt;option value="marketing"&gt;Marketing&lt;/option&gt;<br>    
+                    &lt;/select&gt;
+                </ul>
+            </td>
+        </tp>
+    </table><br>
+    <select name="intereses" multiple>
+        <option value="programacion">Programación</option>
+        <option value="diseno">Diseño</option>
+        <option value="marketing">Marketing</option>
+    </select>
+
+    <h3>&lt;button&gt;</h3>
+    <p>&lt;button&gt; se utiliza para crear botones de enviamiento o otras acciones dentro del formulario.</p>
+    <table border="5" cellpadding="10" cellspacing="0">
+        <p>Ejemplo:</p>
+        <tp>
+            <td>
+                <ul>
+                    &lt;button type="submit"&gt;Enviar&lt;/button&gt;
+                </ul>
+            </td>
+        </tp>
+    </table><br>
+    <button type="submit">Enviar</button>
+
+    <h3>Radio buttons</h3>
+    <p>Los <b>Radio buttons</b> permiten seleccionar una opción entre un cojunto de posibilidades.</p>
+    <table border="5" cellpadding="10" cellspacing="0">
+        <p>Ejemplo:</p>
+        <tp>
+            <td>
+                <ul>
+                    &lt;label&gt;&lt;input type="radio" name="sexo" value="hombre"&gt; Hombre&lt;/label&gt;<br> 
+                    &lt;label&gt;&lt;input type="radio" name="sexo" value="mujer"&gt; Mujer&lt;/label&gt;
+                </ul>
+            </td>
+        </tp>
+    </table><br>
+    <label><input type="radio" name="sexo" value="hombre"> Hombre</label>
+    <label><input type="radio" name="sexo" value="mujer"> Mujer</label>
+
     <h3>&lt;checkboxes&gt;</h3>
     <p>Las <b>checkboxes</b> permiten seleccionar diversas opciones independientes.</p>
     <table border="5" cellpadding="10" cellspacing="0">
