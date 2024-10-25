@@ -1,23 +1,32 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Enlaces en HTML</title>
-    </head>
-    <body>
+
+<head>
+    <title>Enlaces en HTML</title>
+</head>
+
+<body>
+    <header>
         <h1>Enlaces en HTML</h1>
+    </header>
+    <section>
         <p>
-            <ul>
-                <li>La etiqueta <b>&lt;a&gt;</b> se utiliza para crear enlaces (links) a otra páginas web, documentos, secciones dentro de la misma página o cualquier otro recurso.</li>
-                <li>El elemento esencial para los enlaces es el atributo <b>href</b> que define la URL a la cual redirige al usuario.</li>
-                <li>El texto entre la etiqueta de abertura i la de cierre es el que los usuarios veran i podran clicar para ser redirigidos.</li>
-            </ul>
+        <ul>
+            <li>La etiqueta <b>&lt;a&gt;</b> se utiliza para crear enlaces (links) a otra páginas web, documentos,
+                secciones dentro de la misma página o cualquier otro recurso.</li>
+            <li>El elemento esencial para los enlaces es el atributo <b>href</b> que define la URL a la cual redirige al
+                usuario.</li>
+            <li>El texto entre la etiqueta de abertura i la de cierre es el que los usuarios veran i podran clicar para
+                ser redirigidos.</li>
+        </ul>
         </p>
         <h2>Atributos de Enlaces:</h2>
         <ol type="1">
             <li><b>href (hypertext reference):</b>
                 <ul>
                     <li>Define la <strong>URL</strong> de destinación del enlace.</li>
-                    <li>Puede ser un enlace absoluto (una URL completa) o relativo (camino dentro de un mismo dominio).</li>
+                    <li>Puede ser un enlace absoluto (una URL completa) o relativo (camino dentro de un mismo dominio).
+                    </li>
                 </ul>
             </li>
             <li><b>target:</b>
@@ -37,14 +46,17 @@
                 <td>
                     <b>Buenas prácticas para enlaces:</b>
                     <ul>
-                        <li>Utiliza <b>enlaces descriptivos</b> en lugar de genéricos como: "Clica aquí". Esto mejora la accesibilidad i el SEO.
+                        <li>Utiliza <b>enlaces descriptivos</b> en lugar de genéricos como: "Clica aquí". Esto mejora la
+                            accesibilidad i el SEO.
                             <ul>
                                 <li><b>Correcto</b>: "Visita página de <b><u style="color: blue;">Contacto</u></b>"</li>
                                 <li><b>Incorrecto</b>: "Clica aquí"</li>
                             </ul>
                         </li>
-                        <li>Utiliza <b>target="_blank"</b> sólo cuando sea necesario, ya que abrir enlaces en nuevas pestañas puede confundir a algunos usuarios.</li>
-                        <li>Siempre asegurate de que los <b>enlaces sean accesibles</b> añadiendo una descripción adecuada para los usuarios con lectores de pantalla.</li>
+                        <li>Utiliza <b>target="_blank"</b> sólo cuando sea necesario, ya que abrir enlaces en nuevas
+                            pestañas puede confundir a algunos usuarios.</li>
+                        <li>Siempre asegurate de que los <b>enlaces sean accesibles</b> añadiendo una descripción
+                            adecuada para los usuarios con lectores de pantalla.</li>
                     </ul>
                 </td>
             </tp>
@@ -53,9 +65,9 @@
         <table border="5" cellpadding="10" cellspacing="0">
             <tp>
                 <td>
-                    &lt;a href="https://www.google.com"&gt;Buscar en google&lt;/a&gt;<br> 
-                    &lt;a href="#capitulo1"&gt;Ir al capítulo 1&lt;/a&gt;<br> 
-                    &lt;h2 id="capitul1o"&gt;Capítulo 1&lt;/h2&gt;<br> 
+                    &lt;a href="https://www.google.com"&gt;Buscar en google&lt;/a&gt;<br>
+                    &lt;a href="#capitulo1"&gt;Ir al capítulo 1&lt;/a&gt;<br>
+                    &lt;h2 id="capitul1o"&gt;Capítulo 1&lt;/h2&gt;<br>
                     &lt;a href="https://www.ejemplo.com" target="_blank"&gt;Abre en una nueva pestaña&lt;/a&gt;
                 </td>
             </tp>
@@ -65,5 +77,7 @@
             <a href="https://www.google.com">Buscar en google</a><br>
             <a href="https://www.google.com" target="_blank">Abre google en una nueva pestaña</a>
         </p>
-    </body>
+    </section>
+</body>
+
 </html>

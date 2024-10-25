@@ -1,21 +1,33 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Tablas Avanzadas</title>
-    </head>
-    <body>
+
+<head>
+    <title>Tablas Avanzadas</title>
+</head>
+
+<body>
+    <header>
         <h1>Tablas Avanzadas en HTML</h1>
+    </header>
+    <section>
         <h2>Etiqueta &lt;thead&gt; (table head):</h2>
         <ul>
-            <li>Define el <b>encabezamiento</b> de la tabla, agrupando las filas del encabezamiento (habitualmente las que contienen &lt;th&gt;).</li>
+            <li>Define el <b>encabezamiento</b> de la tabla, agrupando las filas del encabezamiento (habitualmente las
+                que contienen &lt;th&gt;).</li>
         </ul>
+    </section>
+    <section>
         <h2>Etiqueta &lt;tbody&gt; (table body):</h2>
         <ul>
-            <li>Agrupa el <b>cuerpo</b> de la tabla, es decir, las filas de datos. Se suele usar para separar datos de los encabezamientos.</li>
+            <li>Agrupa el <b>cuerpo</b> de la tabla, es decir, las filas de datos. Se suele usar para separar datos de
+                los encabezamientos.</li>
         </ul>
+    </section>
+    <section>
         <h2>Etiqueta &lt;th&gt; (table header):</h2>
         <ul>
-            <li>Se utiliza para crear la celda de <b>encabezamiento</b> en una tabla. El texto dentro de &lt;th&gt; aparece en negrita i centrado por defecto.</li>
+            <li>Se utiliza para crear la celda de <b>encabezamiento</b> en una tabla. El texto dentro de &lt;th&gt;
+                aparece en negrita i centrado por defecto.</li>
         </ul>
 
         <p>Ejemplo:</p>
@@ -45,35 +57,40 @@
         </table>
         <p>La tabla de arriba sería representada así:</p>
         <p>
-            <table border="1" cellpadding="10" cellspacing="5">
-                <thead>
-                    <tr>
-                        <th>Producto</th>
-                        <th>Precio</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Manzana</td>
-                        <td>1.50€</td>
-                    </tr>
-                    <tr>
-                        <td>Plátano</td>
-                        <td>1.00€</td>
-                    </tr>
-                </tbody>
-            </table>
+        <table border="1" cellpadding="10" cellspacing="5">
+            <thead>
+                <tr>
+                    <th>Producto</th>
+                    <th>Precio</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Manzana</td>
+                    <td>1.50€</td>
+                </tr>
+                <tr>
+                    <td>Plátano</td>
+                    <td>1.00€</td>
+                </tr>
+            </tbody>
+        </table>
         </p>
         <table border="5" cellpadding="10" cellspacing="0">
             <tp>
                 <td>
                     <b>Buenas prácticas para tablas:</b>
                     <ul>
-                        <li>Utilizar <b>&lt;thead&gt;</b> i <b>&lt;tbody&gt;</b> para organizar las tablas, especialmente en tablas más grandes, con tal de separar claramente el encabezamiento del cuerpo de la tabla</li>
-                        <li>Mantener las tablas simples para datos tabuladas i utilizar CSS para el diseño más avanzado de las tablas (colores, medidas de la fuente, ...).</li>
+                        <li>Utilizar <b>&lt;thead&gt;</b> i <b>&lt;tbody&gt;</b> para organizar las tablas,
+                            especialmente en tablas más grandes, con tal de separar claramente el encabezamiento del
+                            cuerpo de la tabla</li>
+                        <li>Mantener las tablas simples para datos tabuladas i utilizar CSS para el diseño más avanzado
+                            de las tablas (colores, medidas de la fuente, ...).</li>
                     </ul>
                 </td>
             </tp>
         </table>
-    </body>
+    </section>
+</body>
+
 </html>

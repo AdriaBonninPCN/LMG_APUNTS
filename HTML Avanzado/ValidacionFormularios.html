@@ -1,26 +1,35 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Validación de Formularios</title>
-    </head>
-    <body>
+
+<head>
+    <title>Validación de Formularios</title>
+</head>
+
+<body>
+    <header>
+        <h1>Validación de Formularios</h1>
+    </header>
+    <section>
         <form action="" method="">
-        <p>HTML5 introduce una serie de nuevos atributos i tipos de entrada para <b>validar los formularios</b> de manera nativa, sin necesidad de JavaScript.</p>
-        <h2>Artibuto "required":</h2>
-        <ul>
-            <li>Marca un campo como <b>obligatorio</b>.</li>
-            <table border="5" cellpadding="10" cellspacing="0">
-                <p>Ejemplo:</p>
-                <tp>
-                    <td>
-                        <ul>
-                            &lt;input type="text" name="nombre" required placeholder ="Escribe tu nombre">
-                        </ul>
-                    </td>
-                </tp>
-            </table><br>
-            <input type="text" name="nombre" required placeholder ="Escribe tu nombre">
-        </ul>
+            <p>HTML5 introduce una serie de nuevos atributos i tipos de entrada para <b>validar los formularios</b> de
+                manera nativa, sin necesidad de JavaScript.</p>
+            <h2>Artibuto "required":</h2>
+            <ul>
+                <li>Marca un campo como <b>obligatorio</b>.</li>
+                <table border="5" cellpadding="10" cellspacing="0">
+                    <p>Ejemplo:</p>
+                    <tp>
+                        <td>
+                            <ul>
+                                &lt;input type="text" name="nombre" required placeholder ="Escribe tu nombre">
+                            </ul>
+                        </td>
+                    </tp>
+                </table><br>
+                <input type="text" name="nombre" required placeholder="Escribe tu nombre">
+            </ul>
+    </section>
+    <section>
         <h2>Artibuto "pattern":</h2>
         <ul>
             <li>Permite definir un <b>patrón</b> con expresiones regulares para validar la entrada del usuario.</li>
@@ -29,7 +38,7 @@
                 <tp>
                     <td>
                         <ul>
-                            &lt;input type="text" name="teléfono" pattern="\d{9}" placeholder="Escribe tu teléfono"&gt;    
+                            &lt;input type="text" name="teléfono" pattern="\d{9}" placeholder="Escribe tu teléfono"&gt;
                         </ul>
                     </td>
                 </tp>
@@ -37,6 +46,8 @@
             <input type="text" name="teléfono" pattern="\d{9}" placeholder="Escribe tu teléfono">
         </ul>
         <button type="submit">Probar campos de texto</button>
-    </form>
-    </body>
+        </form>
+    </section>
+</body>
+
 </html>
