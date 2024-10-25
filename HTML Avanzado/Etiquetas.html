@@ -58,6 +58,7 @@
                 </td>
             </tp>
         </table>
+
         <h2>Etiqueta &lt;span&gt;</h2>
         <ul>
             <li>La etiqueta <b>&lt;span&gt;</b> es una etiqueta <b>inline</b> (en línea) que sirve para <b>estilizar</b> o <b>manipular pequeñas porciones de texto o contenido</b> dentro de una página. A diferencia de &lt;div&gt;, no ocupa todo el ancho disponible, si no que ocupa sólo el espacio necesario.</li>
@@ -77,10 +78,104 @@
             <p>Esto es un
                 <span style="color: red";>texto en rojo</span>.
             </p>
-            
         </ul>
+
         <h2>Etiqueta &lt;hr&gt;</h2>
+        <p>En HTML5 el uso de <b>&lt;hr&gt;</b> no es solo decorativo. Tiene un valor <b>semántico</b> para indicar un acnvio de tema o ruptura en el flujo del documento, ayudando tanto a los motores de busqueda como a las herramientas de accesibilidad a entender mejor la lectura del contenido.</p>
+        <table border="5" cellpadding="10" cellspacing="0">
+            <p>Ejemplo:</p>
+            <tp>
+                <td>
+                    <ul>
+                        &lt;h2&gt;Historia de la compañía&lt;/h2&gt;<br> 
+                        &lt;p&gt;Nuestra empresa fue fundada en el año 2026...&lt;/p&gt;<br>
+                        &lt;hr&gt;<br>
+                        &lt;h2&gt;Nuestros servicios&lt;/h2&gt;<br>
+                        &lt;p&gt;Ofrecemos una alta gama de servicios.&lt;/p&gt;
+                    </ul>
+                </td>
+            </tp>
+        </table><br>
+        <table border="5" cellpadding="10" cellspacing="0">
+            <tp>
+                <td>
+                    <b>Buenas prácticas para usar divs en HTML:<br></b>
+                    <ul>
+                        <ul>
+                            <li><b>No abusar de la etiqueta &lt;hr&gt;</b>: Utilizarla sólo cuando sea necesario para separar secciones importantes o marcar un canvio de contenido.</li>
+                            <li><b>Estilizar las líneas con CSS</b>: Incluso si &lt;hr&gt; genera una línea por defecto, utiliza CSS para personalizar el aspecto y hacer que se ajuste al diseño de tu sitio web.</li>
+                            <li><b>Uso semántico</b>: Recuerda que &lt;hr&gt; se puede usar para indicar un canvio de contenido o de tema dentro de un documento, lo que también mejora la accesibilidad.</li>
+                            <li><b>Evitar el uso de &lt;hr&gt; solo con finalidad visual.</b>: Si necesitas una línea solo para estilo, considera usar <strong>CSS</strong> en lugar de la etiqueta &lt;hr&gt; para mantener el documento limpio i semántico.</li>
+                        </ul>
+                    </ul>
+                </td>
+            </tp>
+        </table>
+
         <h2>Etiqueta &lt;template&gt;</h2>
+        <p>La etiqueta <b>&lt;tempalte&gt;</b> se utiliza para definir <b>fragmentos de HTML reutilizables</b> que no se muestran inmediatamente cuando la página se carga. El contenido dentro de un &lt;template&gt; no se añade al documento hasta que se manipula explícitamente con <b>JavaScript</b>, cosa que permite crear plantillas que se pueden clonar i insertar al DOM de manera dinámica.</p>
+        <p>Este elemento es ideal cuando quieres mantener <b>estructuras HTML preparadas</b> que podrás añadir al documento en tiempo real, sin que estas sean rendidas o visibles inicialmente. Esto proporciona mucha flexibilidad para aplicaciones dinámicas.</p>
+        <table border="5" cellpadding="10" cellspacing="0">
+            <p>Ejemplo:</p>
+            <tp>
+                <td>
+                    <ul>
+                        &lt;template id="miPlantilla"&gt;<br> 
+                        &lt;div class="producto"&gt;<br>
+                        &lt;h2&gt;Nombre del producto&lt;/h2&gt;<br>
+                        &lt;p&gt;Descripción del producto&lt;/p&gt;<br>
+                        &lt;/div&gt;<br>
+                        &lt;/template&gt;
+                    </ul>
+                </td>
+            </tp>
+        </table><br>
+        <table border="5" cellpadding="10" cellspacing="0">
+            <tp>
+                <td>
+                    <b>Buenas prácticas para usar divs en HTML:<br></b>
+                    <ul>
+                        <ul>
+                            <li><b>Mantener las plantillas simples i modulares</b>: Organizar nuestro código dentro de &lt;template&gt; de manera que podamos reutilizar fácilmente estas plantillas en diferentes secciones de la página.</li>
+                            <li><b>Clona plantillas con JavaScript</b>: La etiqueta no renderiza su contenido hasta que lo invocas con JavaScript, la cual cosa nos da control total sobre como se tiene que añadir al DOM.</li>
+                            <li><b>Utiliza plantillas para generar contenido dinámicamente</b>: Es muy útil en aplicaciones donde el contenido tiene que ser generado o actualizado en tiempo real, como listas, formularios o tarjetas de productos.</li>
+                            <li><b>No incluyas contenido activo dentro del template</b>: Los scripts o otros contenidos interactivos dentro del template no se ejecutarán hasta que el contenido sea añadido al DOM, así que asegurate de añadir los elementos interactivos una vez esté el documento.</li>
+                        </ul>
+                    </ul>
+                </td>
+            </tp>
+        </table>
+
         <h2>Etiqueta &lt;Iframes&gt;</h2>
+        <p><b>&lt;iframe&gt;</b> (inline frame) es una etiqueta HTML que permite insertar una página HTML dentro de otra página web. Es una manera más moderna i segura de incrustar contenido externo, como otras páginas web, vídoes, formularios o mapas, dentro de la página principal.</p>
+        <p>Los <b>iframes</b> se utilizan comunmente para contenidos dinámicos como <b>vídeos de YouTube, Google Maps,</b> o integraciones de servicios externos.</p>
+        <p>La etiqueta <b>iframe</b> se define dentro del cuerpo del documento i se puede personalizar con atributos como <b>width, height, src</b> i <b>frameborder.</b></p>
+        <table border="5" cellpadding="10" cellspacing="0">
+            <p>Ejemplo:</p>
+            <tp>
+                <td>
+                    <ul>
+                        &lt;iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/xvFZjo5PgG0?si=LlGrng6iIS8IkwuH&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen&gt;&lt;/iframe&gt;
+                    </ul>
+                </td>
+            </tp>
+        </table><br>
+        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/xvFZjo5PgG0?si=LlGrng6iIS8IkwuH&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <table border="5" cellpadding="10" cellspacing="0">
+            <tp>
+                <td>
+                    <b>Buenas prácticas para usar divs en HTML:<br></b>
+                    <ul>
+                        <ul>
+                            <li><b>Evita el uso excesivo de iframes</b>: El uso excesivo de iframes puede hacer que la página sea más lenta i más difícil de gestionar. Usalos sólo cuando sea necesario (como para incrustar contenido externo).</li>
+                            <li><b>Utiliza el atributo sandbox por seguridad</b>: Cuando incrustes contenido de otros sitios, utiliza el atributo <b>sandbox</b> para limitar las acciones que el iframe puede realizar dentro de tu sitio web, mejorando la seguridad.</li>
+                            <li><b>Optimiza la altura y ancho</b>: Ajusta la medida del iframe para asegurarte de que el contenido se vea correctamente en todas las medidas de pantalla, especialmente en dipositivos móviles.</li>
+                            <li><b>Utiliza alternativas cuando sea posible</b>: Cuando sólo necesites cargar contenido dinámico que puedas generat tu mismo (como un vídeo o una imagen), considera cargarlo directamente a la página en lugar de usar un iframe</li>
+                            <li><b>Utiliza allowfullscreen para vídeos</b>: Si estás incrustando vídeos, permite que se puedan visualizar en pantalla completa con el atributo <b>allowfullscreen</b> para mejorar la experiencia del usuario.</li>
+                        </ul>
+                    </ul>
+                </td>
+            </tp>
+        </table>
     </body>
 </html>
