@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Multimedia con HTML</title>
+    </head>
+    <body>
+        <h1>Multimedia con HTML</h1>
+        <p>HTML5 ha introducido nuevas i eficientes formas de integrar <b>multimedia</b> en las páginas web, incluyendo <strong>imágenes</strong>, <strong>vídeos</strong> y <strong>audio</strong> sin necesidad de plug-ins externos como Flash. Esto ha mejorado la compatibilidad como la usabilidad de múltiples dispositivos, especialmente móviles.</p>
+        <h2>Imágenes en HTML</h2>
+        <p>Vistas anteriormente en HTML básico: <a href="/HTML Basico/InsercionImagenes.html">Imágenes en HTML</a></p>
+        
+        <h2>Vídeos en HTML5</h2>
+        <h3>Etiqueta &lt;video&gt;</h3>
+        <ul>
+            <li>HTML5 introduce la etiqueta <b>&lt;video&gt;</b> para insertar videos de manera nativa a la página web sin necesidad de plug-ins externos.</li>
+            <li>
+                <b>Atributos principales:</b>
+                <ul>
+                    <li><b>src:</b> Ruta del fichero del vídeo.</li>
+                    <li><b>controls:</b> Muestra los controles del vídeo (play, pause, volúmen, etc.).</li>
+                    <li><b>autoplay:</b> Hace que el vídeo se reproduzca automáticamente cuando la página carga.</li>
+                    <li><b>loop:</b> Hace que el vídeo se reproduzca en bucle.</li>
+                    <li><b>muted:</b> Reproduce el vídeo sin sonido.</li>
+                </ul>
+            </li>
+        </ul>
+        <p>Vídeo de ejemplo de la cantante virtual Hatsune Miku cantando World is Mine:</p>
+        <table border="5" cellpadding="10" cellspacing="0">
+            <tp>
+                <td>
+                    <ul>
+                        &lt;video src="/Recursos/Hatsune_Miku_World_Is_Mine.mp4" controls width="1280" height="720"&gt;Tu navegador no soporta el vídeo.&lt;/video&gt;
+                    </ul>
+                </td>
+            </tp>
+        </table><br>
+        <video src="/Recursos/Hatsune_Miku_World_Is_Mine.mp4" controls width="400" height="300">Tu navegador no soporta el vídeo.</video>
+        <h2>Áudio en HTML5</h2>
+        <h3>Etiqueta &lt;audio&gt;</h3>
+        <ul>
+            <li>De manera similar a los vídeos HTML5 permite insertar <storn>áudio</storn> nativo usando la etiqueta <b>&lt;audio&gt;</b>.</li>
+            <li>
+                <b>Atributos principales:</b>
+                <ul>
+                    <li><b>src:</b> Ruta del fichero del vídeo.</li>
+                    <li><b>controls:</b> Muestra los controles del vídeo (play, pause, volúmen, etc.).</li>
+                    <li><b>autoplay:</b> Hace que el áudio se reproduzca automáticamente cuando la página carga.</li>
+                    <li><b>loop:</b> Hace que el áudio se reproduzca en bucle.</li>
+                    <li><b>muted:</b> Reproduce el áudio sin sonido inicialmente.</li>
+                </ul>
+            </li>
+        </ul>
+        <p>Áudio de ejemplo de la canción Samba de Janeiro del vídeojuego Samba de Amigo:</p>
+        <table border="5" cellpadding="10" cellspacing="0">
+            <tp>
+                <td>
+                    <ul>
+                        &lt;audio src="/Recursos/Samba de Amigo - Samba de Janeiro - SegaClubMusic (youtube).mp3" controls&gt;Tu navegador no soporta el áudio.&lt;/audio&gt;
+                    </ul>
+                </td>
+            </tp>
+        </table><br>
+        <audio src="/Recursos/Samba de Amigo - Samba de Janeiro - SegaClubMusic (youtube).mp3" controls>Tu navegador no soporta el áudio.</audio>
+        <table border="5" cellpadding="10" cellspacing="0">
+            <tp>
+                <td>
+                    <b>Buenas prácticas para integrar multimédia en HTML:<br></b>
+                    <ul>
+                        <li><b>Proporcionar formatos de ficheros compatibles</b> con los diferentes navegadores para áudio y vídeo (como MP4, WebM, OGG).</li>
+                        <li><b>Utilizar el atributo alt</b> paralas imágenes para mejorar la accesibilidad y optimizar el SEO.</li>
+                        <li><b>No hacer uso del atributo autoplay</b> en áudio y vídeo, ya que puede interrumpir la experiencia del usuario, especialmente en dispositivos móviles.</li>
+                        <li><b>Controlar la medida de los ficheros multimédia</b> para evitar tiempos de carga largos i mejorar la experiencia del usuario.</li>
+                    </ul>
+                </td>
+            </tp>
+        </table>
+    </body>
+</html>
