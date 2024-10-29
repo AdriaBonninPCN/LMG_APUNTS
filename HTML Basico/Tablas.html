@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tablas básicas</title>
+</head>
+
+<body>
+    <header>
+        <h1>Tablas en HTML</h1>
+        <h2>Tablas básicas en HTML</h2>
+    </header>
+    <section>
+        <h3>Etiqueta &lt;table&gt;:</h3>
+        <ul>
+            <li>La etiqueta <b>&lt;table&gt;</b> define la tabla i actua como el contenedor principal.</li>
+        </ul>
+    </section>
+    <section>
+        <h3>Etiqueta &lt;tr&gt; (table row):</h3>
+        <ul>
+            <li>Define una <b>fila</b> dentro de la tabla.</li>
+        </ul>
+    </section>
+    <section>
+        <h3>Etiqueta &lt;td&gt; (table data):</h3>
+        <ul>
+            <li>Define una <b>celda</b> dentro de una fila dentro de la tabla (datos de la tabla).</li>
+        </ul>
+        <p>Ejemplo:</p>
+        <table border="5" cellpadding="10" cellspacing="0">
+            <tp>
+                <td>
+                    &lt;table&gt;<br>
+                    &emsp;&lt;tr&gt;<br>
+                    &emsp;&emsp;&lt;td&gt;María&lt;/td&gt;<br>
+                    &emsp;&emsp;&lt;td&gt;25&lt;/td&gt;<br>
+                    &emsp;&lt;/tr&gt;<br>
+                    &emsp;&lt;tr&gt;<br>
+                    &emsp;&emsp;&lt;td&gt;Juan&lt;/td&gt;<br>
+                    &emsp;&emsp;&lt;td&gt;30&lt;/td&gt;<br>
+                    &emsp;&lt;/tr&gt;<br>
+                    &lt;/table&gt;
+                </td>
+            </tp>
+        </table>
+        <p>La tabla de arriba sería representada así:</p>
+        <p>
+        <table>
+            <tr>
+                <td>María</td>
+                <td>25</td>
+            </tr>
+            <tr>
+                <td>Juan</td>
+                <td>30</td>
+            </tr>
+        </table>
+        </p>
+        <h3>Atributos de una tabla:</h3>
+        <ul>
+            <li><b>border</b>:
+                <ul>
+                    <li>Añade un <b>borde</b> a la tabla i a las celdas</li>
+                </ul>
+            </li>
+            <li><b>cellpadding</b>:
+                <ul>
+                    <li>Define el <b>espacio</b> entre el contenido de la celda i el borde de la celda.</li>
+                </ul>
+            </li>
+            <li><b>cellspacing</b>:
+                <ul>
+                    <li>Controla el <b>espacio</b> entre las celdas de la tabla</li>
+                </ul>
+            </li>
+        </ul>
+        <p>Ejemplo:</p>
+        <table border="5" cellpadding="10" cellspacing="0">
+            <tp>
+                <td>
+                    &lt;table border="1" cellpadding="10" cellspacing="5"&gt;<br>
+                    &emsp;&lt;tr&gt;<br>
+                    &emsp;&emsp;&lt;td&gt;Nombre&lt;/td&gt;<br>
+                    &emsp;&emsp;&lt;td&gt;Edad&lt;/td&gt;<br>
+                    &emsp;&lt;/tr&gt;<br>
+                    &emsp;&lt;tr&gt;<br>
+                    &emsp;&emsp;&lt;td&gt;Juan&lt;/td&gt;<br>
+                    &emsp;&emsp;&lt;td&gt;28&lt;/td&gt;<br>
+                    &emsp;&lt;/tr&gt;<br>
+                    &emsp;&lt;tr&gt;<br>
+                    &emsp;&emsp;&lt;td&gt;María&lt;/td&gt;<br>
+                    &emsp;&emsp;&lt;td&gt;32&lt;/td&gt;<br>
+                    &emsp;&lt;/tr&gt;<br>
+                    &lt;/table&gt;<br>
+                </td>
+            </tp>
+        </table>
+        <p>La tabla de arriba sería representada así:</p>
+        <p>
+        <table border="1" cellpadding="10" cellspacing="5">
+            <tr>
+                <td>Nombre</td>
+                <td>Edad</td>
+            </tr>
+            <tr>
+                <td>Juan</td>
+                <td>28</td>
+            </tr>
+            <tr>
+                <td>María</td>
+                <td>32</td>
+            </tr>
+        </table>
+        </p>
+    </section>
+</body>
+
+</html>
