@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Representar código en HTMl</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="imageDiv">
+            <img src="../Logo/estrella.svg" alt="Logo Estrella">
+        </div>
+    </header>
+    <div class="contenido">
+        <section>
+            <p>El CSS se puede aplicar a un documento HTML de tres maneras principales: <b>en línea</b>,
+                <b>incrustado</b> (dentro del HTML) y <b>externo</b> (mediante un archivo CSS separado). Cada una de
+                estas formas tiene sus propósitos y usos.
+            </p>
+
+            <ol class="informacion">
+                <li>
+                    <b>Estilos en línea (Inline styles)</b>
+                    Los estilos en línea se aplican directamente a un elemento HTML, utilizando el atributo style dentro
+                    de la misma etiqueta del elemento. Este método es adecuado para aplicar estilos a un solo elemento
+                    de manera rápida, pero no es recomendable para páginas grandes, ya que dificulta el mantenimiento.
+                </li>
+
+                <p class="code">
+                    &lt;p style="color: red; font-size: 20px;"&gt;Este es un párrafo con estilos en línea.&lt;/p&gt;
+                </p>
+                <p>Ejemplo:</p>
+                <p style="color: red; font-size: 20px;">Este es un párrafo con estilos en línea.</p>
+
+                <li>
+                    <b>Estilos incrustados (Embedded styles)</b>
+                    Los estilos incrustados se colocan dentro de la sección &lt;head&gt; de un documento HTML, dentro de
+                    una etiqueta &lt;style&gt;. Estos estilos se aplican a todos los elementos HTML de la página actual.
+                </li>
+
+                <p class="code">
+                    p {<br>
+                    &nbsp;color: blue;<br>
+                    &nbsp;font-size: 18px;<br>
+                    }<br>
+                    h1 {<br>
+                    &nbsp;text-align: center;<br>
+                    }<br>
+                </p>
+                <li>
+                    Estilos externos (External stylesheets)
+                    Los estilos externos se almacenan en un archivo CSS separado, y se enlazan al documento HTML
+                    utilizando la etiqueta &lt;link&gt; dentro de la sección &lt;head&gt;. Este es el método más
+                    recomendado para la mayoría de sitios web, especialmente si constan de múltiples páginas.
+                </li>
+
+                <p class="code">
+                    [AL DOCUMENT HTML]<br><br>
+                    &lt;head&gt;<br>
+                    &nbsp;&lt;link rel="stylesheet" href="style.css"&gt;<br>
+                    &lt;/head&gt;<br><br>
+                    [AL DOCUMENT CSS]<br><br>
+
+                    p {<br>
+                    &nbsp;color: blue;<br>
+                    &nbsp;font-size: 18px;<br>
+                    }<br>
+                    h1 {<br>
+                    &nbsp;text-align: center;<br>
+                    }<br>
+                </p>
+            </ol>
+        </section>
+    </div>
+</body>
+
+</html>
