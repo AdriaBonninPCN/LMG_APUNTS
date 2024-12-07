@@ -14,52 +14,49 @@
             <img src="../Logo/estrella.svg" alt="Logo Estrella">
         </div>
     </header>
-    <article>
-        <h1>Elementos HTML i Anidamientos</h1>
-        <h3>Diferencia entre Etiquetas i Elementos</h3>
-        <h4>Etiqueta (tag):</h4>
-        <ul>
-            <li>Es la parte que define el inicio y el final de un componente HTML</li>
-            <li>Se dilimita con símbolos &lt;&gt;.<br>
-                Ejemplos: &lt;p&gt;, &lt;/p&gt;, &lt;h1&gt;, &lt;/h1&gt;.</li>
-        </ul>
-        <p>Ejemplo:</p>
+    <div class="contenido">
+        <section>
+            <h1>Elementos HTML i Anidamientos</h1>
+            <h3>Diferencia entre Etiquetas i Elementos</h3>
+            <h4>Etiqueta (tag):</h4>
+            <ul class="informacion">
+                <li>Es la parte que define el inicio y el final de un componente HTML</li>
+                <li>Se dilimita con símbolos &lt;&gt;.<br>
+                    Ejemplos: &lt;p&gt;, &lt;/p&gt;, &lt;h1&gt;, &lt;/h1&gt;.</li>
+            </ul>
+            <p>Ejemplo:</p>
 
-                    <p class = code>&lt;p&gt;</p>
-        <h4>Elemento:</h4>
-        <ul>
-            <li>Un <b>elemento</b> incluye la etiqueta de abertura, el contenido (si hay), i la etiqueta de cierre.</li>
-            <li>Los elementos pueden estar vacíos o tener otro dentro.</li>
-        </ul>
-        <p>Ejemplo:</p>
-        <table border="5" cellpadding="10" cellspacing="0">
-            <tp>
-                <td>
-                    &lt;p&gt;Esto es párrafo&lt;/p&gt;
-                </td>
-            </tp>
-        </table>
-    </article>
-    <article>
-        <h3>Anidamientos</h3>
-        <h4>Elementos anidados</h4>
-        <ul>
-            <li><b>Anidamiento</b> se refiere a colocar un elemento HTML dentro de otro elemento.</li>
-            <li>Es importante seguir correctamente el orden de las etiquetas: la primera que se abre es la última que se
-                cierra.</li>
-        </ul>
-        <table border="5" cellpadding="10" cellspacing="0">
-            <tp>
-                <td>
-                    &lt;!DOCTYPE html&gt;<br>
-                    &lt;html&gt;<br>
-                    &emsp;&lt;head&gt;&lt;/head&gt;<br>
-                    &emsp;&lt;body&gt;&lt;/body&gt;<br>
-                    &lt;/html&gt;
-                </td>
-            </tp>
-        </table>
-    </article>
+            <p class=code>&lt;p&gt;</p>
+            <h4>Elemento:</h4>
+            <ul class="informacion">
+                <li>Un <b>elemento</b> incluye la etiqueta de abertura, el contenido (si hay), i la etiqueta de cierre.
+                </li>
+                <li>Los elementos pueden estar vacíos o tener otro dentro.</li>
+            </ul>
+            <p>Ejemplo:</p>
+            <p class="code">
+                &lt;p&gt;Esto es párrafo&lt;/p&gt;
+            </p>
+        </section>
+        <section>
+            <h3>Anidamientos</h3>
+            <h4>Elementos anidados</h4>
+            <ul class="informacion">
+                <li><b>Anidamiento</b> se refiere a colocar un elemento HTML dentro de otro elemento.</li>
+                <li>Es importante seguir correctamente el orden de las etiquetas: la primera que se abre es la última
+                    que se
+                    cierra.</li>
+            </ul>
+            <p>Ejemplo:</p>
+            <p class="code">
+                &lt;!DOCTYPE html&gt;<br>
+                &lt;html&gt;<br>
+                &emsp;&lt;head&gt;&lt;/head&gt;<br>
+                &emsp;&lt;body&gt;&lt;/body&gt;<br>
+                &lt;/html&gt; <br>
+            </p>
+        </section>
+    </div>
 </body>
 
 </html>
