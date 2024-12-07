@@ -14,13 +14,101 @@
             <img src="../Logo/estrella.svg" alt="Logo Estrella">
         </div>
     </header>
-    <div class = "contenido">
+    <div class="contenido">
         <h1>
             Posicionamiento Básico
         </h1>
         <section>
-            
+            <p>CSS ofrece diversas técnicas para controlar la ubicación de los elementos en una página web. La propiedad
+                clave para el posicionamiento es position, que tiene varios valores para definir cómo se posiciona un
+                elemento respecto a su contenedor o al documento.
+            </p>
+
+            <ol class="informacion">
+                <li><strong>La propiedad position:</strong> Permite especificar el método de posicionamiento de un
+                    elemento. Los valores más comunes son:</li>
+
+                <li><strong>Propiedades de posicionamiento (top, right, bottom, left):</strong> Cuando se define la
+                    propiedad position como relative, absolute, fixed o sticky, se pueden usar las propiedades top,
+                    right, bottom y left para especificar la distancia del elemento respecto a sus límites.
+                    <ul>
+                        <li><strong>top: 10px;</strong> Mueve el elemento 10 píxeles hacia abajo desde el límite
+                            superior.</li>
+                        <li><strong>right: 20px;</strong> Mueve el elemento 20 píxeles hacia la izquierda desde el
+                            límite derecho.</li>
+                    </ul>
+                </li>
+
+                <p class="code">
+                    div {<br>
+                        &nbsp;position: relative;<br>
+                    &nbsp;top: 20px; /* Mueve el elemento 20 píxeles hacia abajo desde su posición inicial */<br>
+                    &nbsp;left: 30px; /* Mueve el elemento 30 píxeles hacia la izquierda */<br>
+                    }
+                </p>
+
+                <li><strong>Posicionamiento absoluto (position: absolute):</strong> El elemento se saca completamente
+                    del flujo normal del documento y se posiciona respecto a su elemento contenedor más cercano con
+                    position: relative, absolute o fixed.</li>
+                <p class="code">
+                    div {<br>
+                        &nbsp;position: absolute;<br>
+                    &nbsp;top: 50px;<br>
+                    &nbsp;left: 100px;<br>
+                    }
+
+                </p>
+
+                <li><strong>Posicionamiento fijo (position: fixed):</strong> Los elementos con position: fixed se
+                    mantienen en una ubicación fija en la pantalla incluso cuando el usuario hace desplazamientos. Se
+                    posicionan respecto a la ventana del navegador.</li>
+                <p class="code">
+                    div {<br>
+                    &nbsp;position: fixed;<br>
+                    &nbsp;top: 0;<br>
+                    &nbsp;left: 0;<br>
+                    &nbsp;width: 100px;<br>
+                    &nbsp;height: 100px;<br>
+                    &nbsp;background-color: red;<br>
+                    }
+                </p>
+                <li><strong>Posicionamiento pegajoso (position: sticky):</strong> Los elementos con position: sticky se
+                    comportan como relative mientras el usuario se desplaza por la página y llega a un punto
+                    especificado, después del cual el elemento se comporta como fixed.</li>
+                <p class="code">
+                    h1 {<br>
+                        &nbsp;position: sticky;<br>
+                        &nbsp;top: 10px;<br>
+                    }
+
+                </p>
+                <li><strong>Propiedad z-index:</strong> Se usa para controlar el orden de superposición de los elementos
+                    posicionados (relative, absolute, fixed o sticky). Los valores más altos de z-index colocan el
+                    elemento delante de otros elementos con valores inferiores.</li>
+                <p class="code">
+                    div {<br>
+                    &nbsp;position: absolute;<br>
+                    &nbsp;z-index: 10; /* Aquest element es
+                    mostrarà davant dels altres amb
+                    z-index inferior */<br>
+                    }
+                </p>
+            </ol>
+
+            <h2>Resumen de propiedades vistas: </h2>
+            <ul class="informacion">
+                <li><strong>position: static:</strong> Posicionamiento por defecto.</li>
+                <li><strong>position: relative:</strong> El elemento se mueve respecto a su posición original.</li>
+                <li><strong>position: absolute:</strong> El elemento se posiciona respecto a su contenedor más cercano.
+                </li>
+                <li><strong>position: fixed:</strong> El elemento se fija respecto a la ventana del navegador.</li>
+                <li><strong>position: sticky:</strong> El elemento se comporta como relativo hasta que llega a una
+                    posición especificada, donde se mantiene fijo.</li>
+                <li><strong>z-index:</strong> Controla el orden de superposición de los elementos.</li>
+            </ul>
+
         </section>
     </div>
-    </body>
+</body>
+
 </html>
