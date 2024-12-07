@@ -14,110 +14,99 @@
             <img src="../Logo/estrella.svg" alt="Logo Estrella">
         </div>
     </header>
-    <h1>Listas HMLT</h1>
-    <section>
-        <h2>Listas No Ordenadas (&lt;ul&gt;):</h2>
-        <ol type="1">
-            <li>Se utilizan para listas senzillas de elementos sin orden específico.</li>
-            <li>Los elementos se muestran en viñetas o otros símbolos antes de cada ítem.</li>
-            <li>Cada elemento de la lista se define con la etiqueta &lt;li&gt; (list item).</li>
-        </ol>
-        <p>Ejemplo:</p>
-        <table border="5" cellpadding="10" cellspacing="0">
-            <tp>
-                <td>
-                    &lt;ul&gt;<br>
-                    &lt;li&gt;Primer ítem&lt;/li&gt;<br>
-                    &lt;li&gt;Segon ítem&lt;/li&gt;<br>
-                    &lt;li&gt;Tercer ítem&lt;/li&gt;<br>
-                    &lt;/ul&gt;
-                </td>
-            </tp>
-        </table>
-        <p>La lista de arriba sería representada así:</p>
-        <ul>
-            <li>Primer ítem</li>
-            <li>Segon ítem</li>
-            <li>Tercer ítem</li>
-        </ul>
-    </section>
-    <section>
-        <h2>Listas Ordenadas (&lt;ol&gt;):</h2>
-        <ol type="1">
-            <li>Se utilizan para listas en las que el orden de los elementos el relevante.</li>
-            <li>Los elementos se enumeran automáticamente (1, 2, 3, ...).</li>
-            <li>Cada elemento de la lista también se define con &lt;li&gt;.</li>
-        </ol>
-        <table border="5" cellpadding="10" cellspacing="0">
-            <tp>
-                <td>
-                    &lt;ol&gt;<br>
-                    &lt;li&gt;Primer ítem&lt;/li&gt;<br>
-                    &lt;li&gt;Segon ítem&lt;/li&gt;<br>
-                    &lt;li&gt;Tercer ítem&lt;/li&gt;<br>
-                    &lt;/ol&gt;
-                </td>
-            </tp>
-        </table>
-        <p>La lista de arriba sería representada así:</p>
-        <ol>
-            <li>Primer ítem</li>
-            <li>Segon ítem</li>
-            <li>Tercer ítem</li>
-        </ol>
-    </section>
-    <section>
-        <h2>Atributos de las Listas</h2>
-        <ol type="1">
-            <li>
-                <b>Atributo "type" (para listas ordenadas &lt;ol&gt;)</b>:<br>
-                <ul>
-                    <li>Se puede utilizar para definir el tipo de numeración de la lista:</li>
-                    <ul>
-                        <li><b>1</b>: Números (predeterminado).</li>
-                        <li><b>A</b>: Mayúsculas.</li>
-                        <li><b>a</b>: Minúsculas.</li>
-                        <li><b>I</b>: Números romanos en mayúsculas.</li>
-                        <li><b>i</b>: Números romanos en minúsculas.</li>
-                    </ul>
-                </ul>
-            </li><br>
-            <li>
-                <b>Atributo "start" (para listas ordenadas &lt;ol&gt;)</b>:<br>
-                <ul>
-                    <li>Define el número o la letra para comenzar la numeración.</li>
-                </ul>
-            </li>
-        </ol>
-        <p>Ejemplo:</p>
-        <table border="5" cellpadding="10" cellspacing="0">
-            <tp>
-                <td>
-                    &lt;ol type="A"&gt;<br>
-                    &emsp;&lt;li&gt;Primer ítem&lt;/li&gt;<br>
-                    &emsp;&lt;li&gt;Segon ítem&lt;/li&gt;<br>
-                    &lt;/ol&gt;<br>
-                    <br>
-                    &lt;ol start="5"&gt;<br>
-                    &emsp;&lt;li&gt;Ítem número 5&lt;/li&gt;<br>
-                    &emsp;&lt;li&gt;Ítem número 6&lt;/li&gt;<br>
-                    &lt;/ol&gt;<br>
-                </td>
-            </tp>
-        </table>
-        <p>La lista de arriba sería representada así:</p>
-        <p>
-        <ol type="A">
-            <li>Primer ítem</li>
-            <li>Segon ítem</li>
-        </ol>
-
-        <ol start="5">
-            <li>Ítem número 5</li>
-            <li>Ítem número 6</li>
-        </ol>
-        </p>
+    <div class="contenido">
+        <h1>Listas HMLT</h1>
         <section>
+            <h3>Listas No Ordenadas (&lt;ul&gt;):</h3>
+            <ol type="1" class="informacion">
+                <li>Se utilizan para listas senzillas de elementos sin orden específico.</li>
+                <li>Los elementos se muestran en viñetas o otros símbolos antes de cada ítem.</li>
+                <li>Cada elemento de la lista se define con la etiqueta &lt;li&gt; (list item).</li>
+            </ol>
+            <p>Ejemplo:</p>
+            <p class="code">
+                &lt;ul&gt;<br>
+                &lt;li&gt;Primer ítem&lt;/li&gt;<br>
+                &lt;li&gt;Segon ítem&lt;/li&gt;<br>
+                &lt;li&gt;Tercer ítem&lt;/li&gt;<br>
+                &lt;/ul&gt;
+
+            </p>
+            <p>La lista de arriba sería representada así:</p>
+            <ul class="informacion">
+                <li>Primer ítem</li>
+                <li>Segundo ítem</li>
+                <li>Tercer ítem</li>
+            </ul>
+        </section>
+        <section>
+            <h3>Listas Ordenadas (&lt;ol&gt;):</h3>
+            <ol type="1" class=informacion>
+                <li>Se utilizan para listas en las que el orden de los elementos el relevante.</li>
+                <li>Los elementos se enumeran automáticamente (1, 2, 3, ...).</li>
+                <li>Cada elemento de la lista también se define con &lt;li&gt;.</li>
+            </ol>
+            <p class="code">
+                &lt;ol&gt;<br>
+                &lt;li&gt;Primer ítem&lt;/li&gt;<br>
+                &lt;li&gt;Segon ítem&lt;/li&gt;<br>
+                &lt;li&gt;Tercer ítem&lt;/li&gt;<br>
+                &lt;/ol&gt;
+            </p>
+            <p>La lista de arriba sería representada así:</p>
+            <ol class="informacion">
+                <li>Primer ítem</li>
+                <li>Segon ítem</li>
+                <li>Tercer ítem</li>
+            </ol>
+        </section>
+        <section>
+            <h3>Atributos de las Listas</h3>
+            <ol type="1" class="informacion">
+                <li>
+                    <b>Atributo "type" (para listas ordenadas &lt;ol&gt;)</b>:<br>
+                    <ul>
+                        <li>Se puede utilizar para definir el tipo de numeración de la lista:</li>
+                        <ul>
+                            <li><b>1</b>: Números (predeterminado).</li>
+                            <li><b>A</b>: Mayúsculas.</li>
+                            <li><b>a</b>: Minúsculas.</li>
+                            <li><b>I</b>: Números romanos en mayúsculas.</li>
+                            <li><b>i</b>: Números romanos en minúsculas.</li>
+                        </ul>
+                    </ul>
+                </li><br>
+                <li>
+                    <b>Atributo "start" (para listas ordenadas &lt;ol&gt;)</b>:<br>
+                    <ul>
+                        <li>Define el número o la letra para comenzar la numeración.</li>
+                    </ul>
+                </li>
+            </ol>
+            <p>Ejemplo:</p>
+            <p class="code">
+                &lt;ol type="A"&gt;<br>
+                &emsp;&lt;li&gt;Primer ítem&lt;/li&gt;<br>
+                &emsp;&lt;li&gt;Segon ítem&lt;/li&gt;<br>
+                &lt;/ol&gt;<br>
+                <br>
+                &lt;ol start="5"&gt;<br>
+                &emsp;&lt;li&gt;Ítem número 5&lt;/li&gt;<br>
+                &emsp;&lt;li&gt;Ítem número 6&lt;/li&gt;<br>
+                &lt;/ol&gt;<br>
+            </p>
+            <p>La lista de arriba sería representada así:</p>
+            <ol type="A" class="informacion">
+                <li>Primer ítem</li>
+                <li>Segon ítem</li>
+            </ol>
+
+            <ol start="5" class="informacion">
+                <li>Ítem número 5</li>
+                <li>Ítem número 6</li>
+            </ol>
+            <section>
+    </div>
 </body>
 
 </html>
