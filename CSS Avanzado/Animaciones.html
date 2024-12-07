@@ -14,10 +14,135 @@
             <img src="../Logo/estrella.svg" alt="Logo Estrella">
         </div>
     </header>
-    <div class = "contenido">
+    <div class="contenido">
         <h1>Animaciones y Transiciones</h1>
         <section>
+            <p class="informacion">
+                Las animaciones y transiciones en CSS son herramientas poderosas que permiten añadir movimiento e
+                interacción visual a las páginas web, mejorando la experiencia del usuario. Con estas técnicas, puedes
+                controlar cómo los elementos cambian sus propiedades (como color, posición u opacidad) de manera suave y
+                fluida.
+            </p>
+
+            <ol class="informacion">
+                <li><strong>Uso de transiciones (transition):</strong> Las transiciones CSS permiten que los cambios en
+                    las propiedades de un elemento, como el color, la opacidad, el tamaño o la posición, sean suaves en
+                    lugar de bruscos. Cuando una propiedad cambia, puedes definir la velocidad del cambio utilizando
+                    <code>transition</code>.
+                </li>
+                <p>Sintaxis básica de transición</p>
+                <p class="code">
+                    elemento {<br>
+                    &nbsp;transition: propietat durada funció-temporització retard;<br>
+                    }
+
+                </p>
+                <ol>
+                    <li><strong>Propiedad:</strong> La propiedad CSS que quieres animar (ej. background-color,
+                        transform, opacity, etc.).
+                    </li>
+                    <li><strong>Duración:</strong> Cuánto tiempo durará la transición (ej. 0.5s, 2s).
+                    </li>
+                    <li><strong>Función de temporización:</strong> Controla cómo será la velocidad de la transición (ej.
+                        ease, linear, ease-in-out).
+                    </li>
+                    <li><strong>Retraso:</strong> Opcional, define cuánto tiempo tardará en comenzar la transición (ej.
+                        1s).
+                    </li>
+                </ol>
+                <p>Ejemplo de transición simple</p>
+                <p class="code">
+                    button {<br>
+                    &nbsp;background-color: lightblue;<br>
+                    &nbsp;transition: background-color 0.3s ease;<br>
+                    }<br>
+                    button:hover {<br>
+                    &nbsp;background-color: darkblue;<br>
+                    }
+                </p>
+
+                <li><strong>Propiedades de transición (transition-property):</strong> Si quieres animar varias
+                    propiedades simultáneamente, puedes especificarlas individualmente con
+                    <code>transition-property</code> o utilizar <code>all</code> para aplicar la transición a todas las
+                    propiedades que cambien.
+                </li>
+                <p>Ejemplo animando varias propiedades</p>
+                <p class="code">
+                    div {<br>
+                    &nbsp;width: 100px;<br>
+                    &nbsp;height: 100px;<br>
+                    &nbsp;background-color: lightgreen;<br>
+                    &nbsp;transition: width 1s ease, background-color 0.5s ease-in-out;<br>
+                    }<br>
+                    div:hover {<br>
+                    &nbsp;width: 200px;<br>
+                    &nbsp;background-color: darkgreen;<br>
+                    }
+
+                </p>
+
+                <li><strong>Animaciones clave con @keyframes:</strong> Las animaciones en CSS permiten crear movimientos
+                    más complejos que las transiciones. Utilizan la regla <code>@keyframes</code> para definir puntos
+                    intermedios del movimiento o cambio de propiedad, y se aplican a través de la propiedad
+                    <code>animation</code>.
+                </li>
+                <p>Sintáxis de @keyframes</p>
+                <p class="code">
+                    @keyframes nom-animacio {<br>
+                    &nbsp;0% { propietat: valor-inicial; }<br>
+                    &nbsp;100% { propietat: valor-final; }<br>
+                    }
+                </p>
+                <p>Sintáxis de animation</p>
+                <p class="code"><br>
+                    element {<br>
+                    &nbsp;animation: nom-animacio durada funció-temporització retard cicles<br>
+                    &nbsp;direcció;<br>
+                    }
+                </p>
+                <ul>
+                    <li><strong>Nombre de la animación:</strong> El nombre de la animación definida con @keyframes.</li>
+                    <li><strong>Duración:</strong> El tiempo que durará la animación.</li>
+                    <li><strong>Función de temporización:</strong> Controla la velocidad de la animación (linear, ease,
+                        etc.).</li>
+                    <li><strong>Retraso:</strong> Opcional, cuánto tiempo tardará en comenzar la animación.</li>
+                    <li><strong>Ciclos:</strong> Cuántas veces se repetirá la animación (infinite para repetirla
+                        indefinidamente).</li>
+                    <li><strong>Dirección:</strong> Opcional, si la animación se reproduce de manera normal o inversa
+                        (normal, reverse, alternate).</li>
+                </ul>
+
+
+                <li><strong>Propiedades de animación (animation-duration, animation-delay):</strong> Las propiedades de
+                    animación te permiten personalizar cómo se comporta una animación. Las más importantes son:
+                    <ul>
+                        <li><code>animation-duration:</code> Controla cuánto tiempo dura la animación.</li>
+                        <li><code>animation-delay:</code> Define un retraso antes de que la animación comience.</li>
+                        <li><code>animation-iteration-count:</code> Controla cuántas veces se repetirá la animación (1,
+                            3, infinite).</li>
+                        <li><code>animation-direction:</code> Define si la animación se reproduce hacia adelante
+                            (normal), hacia atrás (reverse) o alterna (alternate).</li>
+                    </ul>
+                </li>
+
+                <p class="code">
+                    .cuadro {<br>
+                    &nbsp;width: 100px;<br>
+                    &nbsp;height: 100px;<br>
+                    &nbsp;background-color: #3498db;<br>
+                    &nbsp;position: relative;<br>
+                    &nbsp;animation-name: moure;<br>
+                    &nbsp;animation-duration: 2s; /* Durada de la animación */<br>
+                    &nbsp;animation-delay: 1s; /* Retardo antes de empezas */<br>
+                    &nbsp;animation-iteration-count: 3; /* Repetición de la animación */<br>
+                    &nbsp;animation-direction: alternate; /* Dirección alternada */<br>
+                    }
+
+                </p>
+            </ol>
+
         </section>
     </div>
-    </body>
+</body>
+
 </html>
