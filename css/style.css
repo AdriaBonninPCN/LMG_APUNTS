@@ -221,3 +221,29 @@ button{
 input{
     color: var(--negroCustom1);
 }
+
+.morao{
+    color: purple;
+}
+
+.amarilloLosPlatanos{
+    color:yellow
+}
+
+.verdeHoja{
+    color:green
+}
+
+.azulEsperanza{
+    color:blue
+}
+
+.sectionFlex{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.divIzquierda{
+    width: 50%;
+}
