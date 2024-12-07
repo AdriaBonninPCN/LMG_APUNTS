@@ -14,10 +14,47 @@
             <img src="../Logo/estrella.svg" alt="Logo Estrella">
         </div>
     </header>
-    <div class = "contenido">
+    <div class="contenido">
         <h1>Popover API</h1>
         <section>
+            <p class="informacion">
+                La Popover API es una funcionalidad reciente que permite a los desarrolladores crear contenido emergente
+                (popovers) de manera nativa, utilizando solo HTML y CSS, sin necesidad de JavaScript. Esta API facilita
+                la creación de componentes como menús, sugerencias o notificaciones que aparecen sobre el contenido
+                existente.
+            </p>
+            <h3>Atributos HTML Relevantes</h3>
+            <ul class="informacion">
+                <li><strong>popover:</strong> Atributo global que designa un elemento como popover.</li>
+                <li><strong>"auto" (por defecto):</strong> El popover se muestra y se oculta automáticamente.</li>
+                <li><strong>"manual":</strong> El control de la visibilidad del popover se gestiona manualmente.</li>
+                <li><strong>popovertarget:</strong> Atributo que especifica el ID del elemento popover que se
+                    controlará.</li>
+                <li><strong>popovertargetaction:</strong> Define la acción a realizar sobre el popover.</li>
+                <li><strong>"show":</strong> Muestra el popover.</li>
+                <li><strong>"hide":</strong> Oculta el popover.</li>
+                <li><strong>"toggle":</strong> Alterna entre mostrar y ocultar el popover.</li>
+            </ul>
+
+            <!--AQUEST EXEMPLE ERA MASSA LLARG PER A FER-HO A MA...-->
+            <p class="code">
+                <img src="../Recursos/popoverapi.PNG">
+            </p>
+
+            <p>Explicación del ejemplo:</p>
+            <ul class = "informacion">
+                <li>El botón con la clase <strong>trigger</strong> tiene el atributo <strong>popovertarget</strong> que
+                    apunta al ID <strong>popoverContent</strong>, indicando que este botón controlará la visibilidad del
+                    popover.</li>
+                <li>El <strong>div</strong> con el ID <strong>popoverContent</strong> tiene el atributo
+                    <strong>popover</strong>, designándolo como contenido emergente.</li>
+                <li>Cuando el usuario hace clic en el botón, el popover se muestra o se oculta automáticamente.</li>
+                <li>El estilo aplicado al pseudo-elemento <strong>::backdrop</strong> crea un efecto de desenfoque en el
+                    fondo cuando el popover está abierto.</li>
+            </ul>
+
         </section>
     </div>
-    </body>
+</body>
+
 </html>
