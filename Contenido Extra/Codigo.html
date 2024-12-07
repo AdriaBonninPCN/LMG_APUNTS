@@ -3,31 +3,36 @@
 
 <head>
     <title>Representar código en HTMl</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
     <header>
-        <h1>Representación de Código en HTML</h1>
+        <div class="imageDiv">
+            <img src="../Logo/estrella.svg" alt="Logo Estrella">
+        </div>
     </header>
-    <section>
-        <p>La etiqueta <b>&lt;code&gt;</b> se usa para representar fragmentos de código en HTML, cambia la fuente en la
-            que se representa el código.</p>
-        <table border="5" cellpadding="10" cellspacing="0">
+    <div class="contenido">
+        <h1>Representación de código en HTML</h1>
+        <section>
+            <p class="informacion">La etiqueta <b>&lt;code&gt;</b> se usa para representar fragmentos de código en HTML,
+                cambia
+                la fuente en la
+                que se representa el código.</p>
             <p>Ejemplo:</p>
-            <tp>
-                <td>
-                    <ul>
-                        &lt;code&gt;<br>
-                        System.out.print("Hello World")<br>
-                        &lt;/code&gt;
-                    </ul>
-                </td>
-            </tp>
-        </table><br>
-        <code>
+            <p class="code">
+                &lt;code&gt;<br>
+                System.out.print("Hello World")<br>
+                &lt;/code&gt;
+            </p>
+            <!--per motius d'estètica, no hem emprat l'etiqueta code, ja que feia cosas rares amb el css-->
+            <code>
             System.out.print("Hello World")
-        </code>
-    </section>
+    </code>
+        </section>
+    </div>
 </body>
 
 </html>
