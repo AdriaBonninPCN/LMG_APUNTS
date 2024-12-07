@@ -14,10 +14,128 @@
             <img src="../Logo/estrella.svg" alt="Logo Estrella">
         </div>
     </header>
-    <div class = "contenido">
+    <div class="contenido">
         <h1>Propiedades Avanzadas de Fuentes y Tipografia</h1>
         <section>
+            <p>
+                El control de la tipografía en una página web es crucial para garantizar una buena legibilidad y una
+                estética consistente. En CSS avanzado, tienes acceso a un conjunto de propiedades que te permiten
+                controlar diversos aspectos de las fuentes, como su carga dinámica, espaciado, peso y líneas de texto.
+                También exploraremos cómo utilizar fuentes personalizadas con la regla @font-face.
+            </p>
+
+            <ol class="informacion">
+                <li>Tipografías web con @font-face
+                    La regla @font-face permite utilizar fuentes personalizadas que no están disponibles en el sistema
+                    del usuario. Esto significa que puedes cargar fuentes específicas desde tu servidor o desde una
+                    fuente externa como Google Fonts, garantizando una coherencia tipográfica entre todos los usuarios,
+                    independientemente del dispositivo o navegador que utilicen.
+                </li>
+                <p class = "code">
+                    @font-face {<br>
+                        &nbsp;font-family: "Open Sans";<br>
+                        &nbsp;src: url("fonts/OpenSans-Regular.woff2") format("woff2"),<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;url("fonts/OpenSans-Regular.woff") format("woff");<br>
+                       }<br>
+                       body {<br>
+                        &nbsp;font-family: "Open Sans", sans-serif;<br>
+                       }
+                </p>
+
+                <p>Bancos de tipografias</p>
+                <img src="../Recursos/bancostipografias.PNG">
+
+                <li>Control avanzado de tipografía
+                    Además de definir fuentes personalizadas, CSS ofrece propiedades avanzadas para controlar otros
+                    aspectos tipográficos, como el espaciado entre letras, el grosor de la fuente o la altura de las
+                    líneas.
+                </li>
+                <ul>
+                    <li>Propiedad letter-spacing
+                        <ul>
+                            <li>La propiedad letter-spacing permite ajustar el espacio entre las letras de un texto,
+                                haciendo que el texto se vea más comprimido o espaciado.</li>
+                        </ul>
+                    </li>
+
+                    <p class="code">
+                        h1 {<br>
+                        &nbsp;letter-spacing: 2px; /* Aumenta el espacio entre letras */<br>
+                        }
+
+                    </p>
+                    <li>Propiedad line-height
+                        <ul>
+                            <li>La propiedad line-height controla la altura de las líneas de texto. Una altura de
+                                línea más grande aumenta el espacio entre las líneas, lo que puede mejorar la
+                                legibilidad.</li>
+                        </ul>
+                    </li>
+                    <p class="code">
+                        p {<br>
+                        &nbsp;line-height: 1.6; /* Aumenta la altura de las líneas */<br>
+                        }
+                    </p>
+                    <li>Propiedad font-weight
+                        <ul>
+                            <li>La propiedad font-weight controla el grosor del texto. Además de los valores normal
+                                y bold, se pueden utilizar valores numéricos entre 100 (muy delgado) y 900 (muy
+                                grueso), ofreciendo más flexibilidad.</li>
+                        </ul>
+                    </li>
+                    <p class="code">
+                        h1 {<br>
+                        &nbsp;font-weight: 700; /* Ancho equivalente en negrita */<br>
+                        }<br>
+                        p {<br>
+                        &nbsp;font-weight: 300; /* Ancho mas delgado */<br>
+                        }
+                    </p>
+                    <li>Propiedad font-style
+                        <ul>
+                            <li>La propiedad font-style permite definir si el texto se mostrará en estilo normal,
+                                cursiva o itálica. Es útil para dar énfasis al texto.</li>
+                        </ul>
+                    </li>
+                    <p class="code">
+                        em {<br>
+                        &nbsp;font-style: italic; /* Muestra el texto en cursiva */<br>
+                        }
+                    </p>
+                    <li>Propiedad text-transform
+                        <ul>
+                            <li>Esta propiedad permite cambiar la capitalización del texto, convirtiéndolo todo en
+                                mayúsculas, minúsculas o capitalizando la primera letra de cada palabra.</li>
+                            <li><strong>uppercase:</strong> Convierte todo el texto en mayúsculas.</li>
+                            <li><strong>lowercase:</strong> Convierte todo el texto en minúsculas.</li>
+                            <li><strong>capitalize:</strong> Capitaliza la primera letra de cada palabra.</li>
+                        </ul>
+                    </li>
+                    <p class="code">
+                        em {<br>
+                        &nbsp;text-transform: uppercase;<br>
+                        }
+                    </p>
+                </ul>
+                </li>
+                <li>Uso del Web Open Font Format (WOFF)<br>
+                    WOFF y WOFF2 son formatos de fuente comprimidos diseñados específicamente para uso web. Estos
+                    formatos proporcionan una compresión más eficiente que los formatos tradicionales, mejorando el
+                    tiempo de carga de las páginas sin perder calidad tipográfica. Se recomienda utilizar WOFF2 cuando
+                    sea posible, ya que es el formato más moderno y optimizado.
+                </li>
+                <p class="code">
+                    @font-face {<br>
+                    &nbsp;font-family: "Roboto";<br>
+                    &nbsp;src: url("fonts/Roboto-Regular.woff2") format("woff2"),<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;url("fonts/Roboto-Regular.woff") format("woff");<br>
+                    }
+
+                </p>
+            </ol>
+
         </section>
     </div>
-    </body>
+</body>
+
 </html>
