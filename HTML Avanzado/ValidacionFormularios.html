@@ -3,51 +3,51 @@
 
 <head>
     <title>Validación de Formularios</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apunts LMG Adrià Bonnin</title>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
     <header>
-        <h1>Validación de Formularios</h1>
+        <div class="imageDiv">
+            <img src="../Logo/estrella.svg" alt="Logo Estrella">
+        </div>
     </header>
-    <section>
-        <form action="" method="">
-            <p>HTML5 introduce una serie de nuevos atributos i tipos de entrada para <b>validar los formularios</b> de
-                manera nativa, sin necesidad de JavaScript.</p>
-            <h2>Artibuto "required":</h2>
-            <ul>
-                <li>Marca un campo como <b>obligatorio</b>.</li>
-                <table border="5" cellpadding="10" cellspacing="0">
-                    <p>Ejemplo:</p>
-                    <tp>
-                        <td>
-                            <ul>
-                                &lt;input type="text" name="nombre" required placeholder ="Escribe tu nombre">
-                            </ul>
-                        </td>
-                    </tp>
-                </table><br>
-                <input type="text" name="nombre" required placeholder="Escribe tu nombre">
-            </ul>
-    </section>
-    <section>
-        <h2>Artibuto "pattern":</h2>
-        <ul>
-            <li>Permite definir un <b>patrón</b> con expresiones regulares para validar la entrada del usuario.</li>
-            <table border="5" cellpadding="10" cellspacing="0">
+    <div class="contenido">
+        <section>
+            <h1>Validación de Formularios en HTML</h1>
+            <form action="" method="">
+                <p class="informacion">HTML5 introduce una serie de nuevos atributos i tipos de entrada para <b>validar
+                        los formularios</b> de
+                    manera nativa, sin necesidad de JavaScript.</p>
+                <h2>Artibuto "required":</h2>
+                <ul class="informacion">
+                    <li>Marca un campo como <b>obligatorio</b>.</li>
+                </ul>
                 <p>Ejemplo:</p>
-                <tp>
-                    <td>
-                        <ul>
-                            &lt;input type="text" name="teléfono" pattern="\d{9}" placeholder="Escribe tu teléfono"&gt;
-                        </ul>
-                    </td>
-                </tp>
-            </table><br>
+                <p class="code">
+                    &lt;input type="text" name="nombre" required placeholder ="Escribe tu nombre">
+                </p>
+                <input type="text" name="nombre" required placeholder="Escribe tu nombre">
+
+        </section>
+        <section>
+            <h2>Artibuto "pattern":</h2>
+            <ul class = "informacion">
+                <li>Permite definir un <b>patrón</b> con expresiones regulares para validar la entrada del usuario.</li>
+            </ul>
+            <p>Ejemplo:</p>
+            <p class="code">
+                &lt;input type="text" name="teléfono" pattern="\d{9}" placeholder="Escribe tu
+                teléfono"&gt;
+            </p>
             <input type="text" name="teléfono" pattern="\d{9}" placeholder="Escribe tu teléfono">
-        </ul>
-        <button type="submit">Probar campos de texto</button>
-        </form>
-    </section>
+
+            <button type="submit">Probar campos de texto</button>
+            </form>
+        </section>
+    </div>
 </body>
 
 </html>

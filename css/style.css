@@ -217,3 +217,7 @@ select option{
 button{
     color: var(--negroCustom1);
 }
+
+input{
+    color: var(--negroCustom1);
+}
