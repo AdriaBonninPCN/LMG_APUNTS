@@ -14,10 +14,144 @@
             <img src="../Logo/estrella.svg" alt="Logo Estrella">
         </div>
     </header>
-    <div class = "contenido">
+    <div class="contenido">
         <h1>Selectores Avanzados</h1>
         <section>
+            <p>
+                Los selectores avanzados en CSS permiten aplicar estilos con mucha más precisión y flexibilidad,
+                permitiendo seleccionar elementos específicos en función de su posición, relación con otros elementos o
+                atributos.
+            </p>
+            <ol class = "informacion">
+                <li>Selectores de atributo
+                    Los selectores de atributo permiten aplicar estilos a los elementos HTML que contienen un
+                    determinado atributo o valor de atributo. Son especialmente útiles para estilizar elementos de
+                    formularios o en casos en los que utilices atributos personalizados.</li>
+                <p>Seleccionar elementos con un atributo específico</p>
+                <p class="code">
+                    input[type="text"] {<br>
+                    &nbsp;border: 1px solid blue;<br>
+                    }
+
+                </p>
+                <p>Seleccionar elementos con un atributo que contiene un valor específico</p>
+                <p class="code">
+                    a[href*="example"] {<br>
+                    &nbsp;color: green;<br>
+                    }
+
+                </p>
+                <p>Seleccionar elementos con un valor de atributo que comienza con un valor específico</p>
+                <p class="code">
+                    img[src^="https"] {<br>
+                    &nbsp;border: 2px solid black;<br>
+                    }
+                </p>
+                <p>Seleccionar todos los elementos con un atributo</p>
+                <p class="code">
+                    [personalitzat] {<br>
+                    &nbsp;border: 1px solid red;<br>
+                    }
+                </p>
+
+                <li>Selectores combinados
+                    Los selectores combinados permiten seleccionar elementos que tienen una relación específica con
+                    otros elementos dentro del documento. Los combinadores más comunes son:</li>
+                    <p>Combinador de descendentes ( ), selecciona todos los elementos que son descententes (hijos, nietos, etc.) de un elemento padre</p>
+                    <p class = "code">
+                        div p {<br>
+                            &nbsp;color: red;<br>
+                          }
+                          
+                    </p>
+                    <p>Combinador de hijos directos (&gt;), selecciona solo los hijos directos de un elemento padre</p>
+                    <p class = "code">
+                        div &gt; p {<br>
+                            &nbsp;color: blue;<br>
+                          }
+                          
+                    </p>
+                    <p>Combinador de hermanos adyacentes(+), selecciona el elemento que está justo después de otro elemento hermano</p>
+                    <p class = "code">
+                        h1 + p {<br>
+                            &nbsp;font-weight: bold;<br>
+                          }
+                    </p>
+                    <p>Combinador de hermanos generales (~), selecciona todos los hermanos que siguen un elemento determinado dentro del mismo padre</p>
+                    <p class = "code">
+                        h2 ~ p {<br>
+                            &nbsp;color: gray;<br>
+                          }
+                          
+                    </p>
+
+
+                <li>Selectores pseudo-clase
+                    Las pseudo-clases son selectores que se utilizan para aplicar estilos a un elemento en un estado o
+                    condición particular. Esto permite cambiar el estilo de un elemento cuando el usuario interactúa con
+                    él o cuando el elemento cumple ciertos criterios.</li>
+                    <p>:hover: aplica estilos cuando el usuario pasa el ratón sobre el elemento</p>
+                    <p class = "code">
+                        a:hover {<br>
+                            &nbsp;color: red;<br>
+                          }
+                          
+                    </p>
+                    <p>:nth-child(): selecciona elementos en función de su posición entre sus hermanos</p>
+                    <p class = "code">
+                        tr:nth-child(odd) {<br>
+                            &nbsp;background-color: #f0f0f0;<br>
+                          }
+                          
+                    </p>
+                    <p>:first-of-type: selecciona el primer elemento de sus tipo dentro de su padre</p>
+                    <p class = "code">
+                        p:first-of-type {<br>
+                            &nbsp;font-weight: bold;<br>
+                          }
+                          
+                    </p>
+                    <p>:not(): selecciona todos los elementos excepto los que coincidan con el selector especificado</p>
+                    <p class = "code">
+                        div:not(.important) {<br>
+                            &nbsp;background-color: yellow;<br>
+                          }
+                          
+                    </p>
+                <li>Selectores pseudo-elemento
+                    Los pseudo-elementos permiten aplicar estilos a una parte específica de un elemento, como su
+                    contenido antes o después, o una línea de texto. Los pseudo-elementos más comunes son ::before y
+                    ::after.</li>
+                    <p>::before: añade contenido o estilos antes del contenido real de un elemento</p>
+                    <p class = "code">
+                        h1::before {<br>
+                            &nbsp;content: "★ ";<br>
+                            &nbsp;color: gold;<br>
+                          }
+                    </p>
+                    <p>::after: añade contenido o estilos después del contenido real de un elemento</p>
+                    <p class = "code">
+                        p::after {<br>
+                            &nbsp;content: " (Final)";<br>
+                            &nbsp;color: gray;<br>
+                          }
+                    </p>
+            </ol>
+            
+            <p class = "code">
+                <img src="../Recursos/selectorescss.PNG">
+            </p>
+            <p>En este ejemplo:</p>
+            <ul>
+                <li>Los campos de texto con type="text" tienen un borde azul.</li>
+                <li>Los párrafos hijos directos de div tienen el texto de color verde.</li>
+                <li>Los enlaces se vuelven rojos cuando el usuario pasa el cursor por encima.</li>
+                <li>Los títulos &lt;h1&gt; tienen un ícono al frente gracias a ::before.</li>
+              </ul>
+              
+
         </section>
     </div>
-    </body>
+</body>
+
 </html>
