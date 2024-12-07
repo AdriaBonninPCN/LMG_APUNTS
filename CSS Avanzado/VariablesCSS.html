@@ -14,10 +14,71 @@
             <img src="../Logo/estrella.svg" alt="Logo Estrella">
         </div>
     </header>
-    <div class = "contenido">
+    <div class="contenido">
         <h1>Variables CSS (Custom Properties)</h1>
         <section>
+            <p class="informacion">
+                Las variables CSS, también conocidas como Custom Properties, permiten definir valores reutilizables
+                dentro de un documento CSS. Esta característica facilita mucho la gestión y mantenimiento de grandes
+                hojas de estilo, ya que puedes centralizar valores como colores, tamaños y espaciados, y reutilizarlos
+                en varias reglas CSS. Si necesitas hacer un cambio en alguno de estos valores, solo tendrás que
+                modificar la variable en un lugar, y el cambio se propagará a todas las partes del documento donde se
+                utilice.
+            </p>
+
+            <ol class="informacion">
+                <li><strong>Definir y utilizar variables CSS:</strong> Las variables CSS se definen dentro de cualquier
+                    selector utilizando el prefijo <strong>--</strong>. Es habitual definirlas en el selector
+                    <strong>:root</strong> para que estén disponibles globalmente en todo el documento.
+                </li>
+
+                <p class="code">
+                    :root {
+                    --color-primari: #3498db;
+                    --marge-petit: 10px;
+                    }
+                    body {
+                    background-color: var(--color-primari);
+                    margin: var(--marge-petit);
+                    }
+                </p>
+                <li><strong>Beneficios de las variables en grandes proyectos:</strong> El uso de variables es
+                    especialmente útil en proyectos grandes o complejos, donde necesitas garantizar la consistencia en
+                    colores, tamaños, fuentes y otros estilos. Cambiar estos valores en múltiples lugares manualmente
+                    puede ser tedioso y propenso a errores. Las variables centralizan estos valores en un solo lugar.
+                </li>
+                <ul>
+                    <li><strong>Mantenibilidad:</strong> Puedes modificar fácilmente valores globales como los colores o
+                        los tamaños cambiando solo una variable.</li>
+                    <li><strong>Reutilización:</strong> Las mismas variables se pueden utilizar en cualquier lugar de la
+                        hoja de estilo, ahorrando tiempo y espacio.</li>
+                    <li><strong>Consistencia:</strong> El uso de variables asegura que todos los elementos que dependen
+                        de una variable tengan el mismo estilo.</li>
+                </ul>
+                <li><strong>Variables CSS con valores por defecto:</strong> Puedes proporcionar un valor por defecto a
+                    las variables CSS en caso de que no estén definidas. Esto es útil si quieres asegurarte de que el
+                    diseño funcione incluso si la variable falla o no se encuentra.</li>
+
+                <p class="code">
+                    h2 {
+                    color: var(--color-primari, black); /* Utilitza negre si --color-primari no està definit */
+                    }
+                </p>
+
+                <h2>Ejemplo completo con variables CSS:</h2>
+
+                <!--ERA MASSA LLARG PER FER-HO A MA...-->
+                <p class = "code"><img src = "../Recursos/variablescss.PNG"></p>
+                <p>En este ejemplo:</p>
+                <ul class = "informacion">
+                    <li>Se utilizan variables CSS para gestionar los colores, el tamaño del texto y los márgenes.</li>
+                    <li>El botón cambia de color cuando se pasa el ratón por encima, utilizando las mismas variables para su transición.</li>
+                  </ul>
+                  
+            </ol>
+
         </section>
     </div>
-    </body>
+</body>
+
 </html>
