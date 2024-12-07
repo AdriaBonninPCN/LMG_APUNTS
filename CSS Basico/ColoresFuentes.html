@@ -14,10 +14,97 @@
             <img src="../Logo/estrella.svg" alt="Logo Estrella">
         </div>
     </header>
-    <div class = "contenido">
+    <div class="contenido">
         <h1>Colores y fuentes</h1>
         <section>
+            <p>
+                El CSS proporciona diversas propiedades para aplicar colores y fondos a los elementos HTML. Estas
+                propiedades son esenciales para mejorar el aspecto visual y la legibilidad de la página web.
+            </p>
+            <ul class="informacion">
+                <li><strong>Propiedad color:</strong> Se utiliza para cambiar el color del texto dentro de un elemento.
+                    Puedes definir los colores de diversas maneras:
+                    <ul>
+                        <li>Nombres de colores: utilizar nombres predeterminados como red, blue, green, etc.</li>
+                        <li>Colores hexadecimales: utilizar un código hexadecimal que comienza con # seguido de seis
+                            caracteres (ejemplo: #FF0000 para rojo).</li>
+                        <li>RGB: utilizar valores de rgb() donde cada componente (rojo, verde, azul) se especifica entre
+                            0 y 255.</li>
+                        <li>RGBA: igual que rgb(), pero con un cuarto valor para la opacidad (valores entre 0.0 y 1.0).
+                        </li>
+                    </ul>
+                </li>
+                <p class="code">
+                    p {<br>
+                    &nbsp;color: blue; /* Utilitza un nom de color */<br>
+                    }<br>
+                    h1 {<br>
+                    &nbsp;color: #FF5733; /* Utilitza un codi hexadecimal */<br>
+                    }<br>
+                    span {<br>
+                    &nbsp;color: rgb(0, 255, 0); /* Utilitza el sistema RGB */<br>
+                    }<br>
+                    div {<br>
+                    &nbsp;color: rgba(0, 0, 255, 0.5); /* Utilitza el sistema RGBA amb<br>
+                    &nbsp;opacitat */<br>
+                    }
+                </p>
+
+                <li><strong>Propiedad background-color:</strong> Se utiliza para establecer el color de fondo de un
+                    elemento. Al igual que la propiedad color, puedes definir colores utilizando nombres, valores
+                    hexadecimales, RGB o RGBA.</li>
+                <p class="code">
+                    body {<br>
+                    &nbsp;background-color: lightgray; /* Color de fons gris clar */<br>
+                    }<br>
+                    div {<br>
+                    &nbsp;background-color: #00FF00; /* Color de fons verd */<br>
+                    }
+
+                </p>
+
+                <li><strong>Propiedad background:</strong> Es una forma abreviada de especificar varias propiedades de
+                    fondo a la vez, como el color, la imagen de fondo, la repetición, la posición, etc.</li>
+                <p class="code">
+                    div {<br>
+                    &nbsp;background: lightblue url("fons.jpg") no-repeat center cover;<br>
+                    }
+                </p>
+
+                <li><strong>Propiedad background-image:</strong> Esta propiedad permite agregar una imagen como fondo de
+                    un elemento. Puedes especificar la ubicación de la imagen con una URL.
+
+                    <p class="code">
+                        div {<br>
+                        &nbsp;background-image: url("imatge-de-fons.jpg");<br>
+                        }
+
+                    </p>
+
+                    Si quieres que la imagen se
+                    repita o se muestre de otra manera, puedes utilizar otras propiedades complementarias:
+                    <ul>
+                        <li><strong>background-repeat:</strong> Controla si la imagen de fondo se repite. Los valores
+                            pueden ser repeat, no-repeat, repeat-x (horizontalmente) o repeat-y (verticalmente).</li>
+                        <li><strong>background-position:</strong> Define la posición de la imagen de fondo (por ejemplo,
+                            center, top, left).</li>
+                        <li><strong>background-size:</strong> Permite ajustar el tamaño de la imagen (por ejemplo, cover
+                            o contain para adaptarse al tamaño del elemento).</li>
+                    </ul>
+                </li>
+                <p class="code">
+                    div {<br>
+                    &nbsp;background-image: url("fons.jpg");<br>
+                    &nbsp;background-repeat: no-repeat;<br>
+                    &nbsp;background-position: center;<br>
+                    &nbsp;background-size: cover;<br>
+                    }
+                </p>
+
+            </ul>
+
         </section>
     </div>
-    </body>
+</body>
+
 </html>
