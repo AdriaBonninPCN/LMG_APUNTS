@@ -247,3 +247,8 @@ input{
 .divIzquierda{
     width: 50%;
 }
+
+.mi-classe {
+    background-color: yellow;
+    color: var(--negroCustom1);
+}

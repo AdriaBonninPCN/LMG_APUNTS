@@ -16,23 +16,90 @@
     </header>
     <div class="contenido">
         <h1>Sintáxis Básica CSS</h1>
-        <section class = "sectionFlex">
-            <div class = "divDerecha">
-                <img src = ../Recursos/sintaxiscss.PNG>
+        <section class="sectionFlex">
+            <div class="divDerecha">
+                <img src=../Recursos/sintaxiscss.PNG>
             </div>
-            <div class = "divIzquierda">
-                <ul class = "informacion">
-                    <li class = "morao">Regla CSS: és una instrucció que defineix com s'ha d'aplicar un estil a un o més elements HTML dins
+            <div class="divIzquierda">
+                <ul class="informacion">
+                    <li class="morao">Regla CSS: és una instrucció que defineix com s'ha d'aplicar un estil a un o més
+                        elements HTML dins
                         d'una pàgina web.</li>
-                    <li class = "amarilloLosPlatanos">Selector: Indica l'element HTML al qual s'aplicaran els estils.</li>
-                    <li class = "verdeHoja">Propietat: Defineix la característica que vols modificar (com ara el color, la mida del text, el
+                    <li class="amarilloLosPlatanos">Selector: Indica l'element HTML al qual s'aplicaran els estils.</li>
+                    <li class="verdeHoja">Propietat: Defineix la característica que vols modificar (com ara el color, la
+                        mida del text, el
                         marge, etc.).</li>
-                    <li class = "azulEsperanza">Valor: Assigna un valor específic a la propietat (com ara "blau" per al color, "16px" per a la mida
+                    <li class="azulEsperanza">Valor: Assigna un valor específic a la propietat (com ara "blau" per al
+                        color, "16px" per a la mida
                         del text, etc.).</li>
-                    <li class = "blancoASecas">Declaració CSS: és una instrucció dins d'una regla CSS que defineix una característica específica
+                    <li class="blancoASecas">Declaració CSS: és una instrucció dins d'una regla CSS que defineix una
+                        característica específica
                         d'estil per a un element HTML.</li>
                 </ul>
             </div>
+        </section>
+        <section>
+            <h2>Selectores en CSS</h2>
+            <p>
+                Los <b>selectores</b> son una parte fundamental del CSS porque definen qué elementos HTML serán
+                afectados por
+                las reglas de estilo. Hay varios tipos de selectores, pero los más comunes en el aprendizaje básico son:
+            </p>
+
+            <ul class="informacion">
+                <li><strong>Selector de tipo (Type Selector):</strong> Este selector aplica estilos a todos los
+                    elementos HTML del mismo tipo. Este código aplicará el color verde a todos los títulos (&lt;h1&gt;)
+                    de la página.</li>
+                <p>Ejemplo:</p>
+                <p class="code">
+                    h1 {<br>
+                    &nbsp; color: green;<br>
+                    }
+                </p>
+                <li><strong>Selector de clase (Class Selector):</strong> Los selectores de clase permiten aplicar
+                    estilos a elementos HTML con una clase específica. Se utiliza un punto (.) para seleccionar una
+                    clase. Cualquier elemento HTML que tenga el atributo class="mi-classe" tendrá un fondo amarillo.
+                </li>
+                <p>Ejemplo:</p>
+                <p class="code">
+                    .mi-classe {<br>
+                    &nbsp;background-color: yellow;<br>
+                    }<br><br>
+                    &lt;p class="mi-classe"&gt;Este párrafo tendra el fondo amarillo&lt;/p&gt;
+                </p>
+                <p class="mi-classe">Este párrafo tendra el fondo amarillo</p>
+                <li><strong>Selector de id (ID Selector):</strong> El selector de id se utiliza para aplicar estilos a
+                    un único elemento HTML que tenga un identificador específico. Se usa el símbolo de la almohadilla
+                    (#). Este ejemplo centrará el texto del elemento que tenga id="mi-id". Es importante recordar que un
+                    ID debe ser único en la página.</li>
+                <p>Ejemplo:</p>
+                <p class="code">
+                    #mi-id {<br>
+                    &nbsp;text-align: center;<br>
+                    }
+
+                </p>
+                <li><strong>Selector universal:</strong> El selector universal (*) aplica estilos a todos los elementos
+                    de una página. Este ejemplo elimina los márgenes y rellenos de todos los elementos de la página, lo
+                    cual es útil para establecer un estilo uniforme.</li>
+                <p>Ejemplo:</p>
+                <p class="code">
+                    * {<br>
+                    margin: 0;<br>
+                    padding: 0;<br>
+                    }
+                </p>
+            </ul>
+        </section>
+        <section>
+            <h2>Conceptos importantes</h2>
+            <ul class = "informacion">
+                <li><strong>Herencia:</strong> Los elementos hijos heredan los estilos de sus padres, por lo que no es
+                    necesario escribir estilos para todo.</li>
+                <li><strong>Especificidad:</strong> Cuando hay conflictos de estilos, el navegador aplica solo el de
+                    mayor especificidad.</li>
+                <li><strong>Cascada:</strong> Todo estilo sobrescribe uno anterior. La C de CSS significa Cascada.</li>
+            </ul>
         </section>
     </div>
 </body>
