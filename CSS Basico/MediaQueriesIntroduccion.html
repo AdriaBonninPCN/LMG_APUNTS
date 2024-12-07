@@ -14,13 +14,97 @@
             <img src="../Logo/estrella.svg" alt="Logo Estrella">
         </div>
     </header>
-    <div class = "contenido">
+    <div class="contenido">
         <h1>
             Media Queries (Introducción)
         </h1>
         <section>
-            
+            <p class="informacion">
+                Las Media Queries son una característica poderosa de CSS que permite adaptar el diseño de una página web
+                según las características del dispositivo que la está visualizando, como el tamaño de la pantalla, la
+                resolución o la orientación. Esta técnica es clave para implementar diseños responsivos, que ofrecen una
+                experiencia óptima tanto en dispositivos móviles como en tabletas o computadoras de escritorio.
+            </p>
+
+            <ol class="informacion">
+                <li><strong>¿Qué son las Media Queries?</strong> Una media query es una condición que se añade al CSS
+                    para aplicar reglas de estilo solo cuando se cumplan ciertas características del dispositivo o de la
+                    ventana del navegador. El ejemplo más común es aplicar estilos diferentes en función del ancho de la
+                    pantalla.</li>
+
+                <p class="code">
+                    @media (condició) {<br>
+                    &nbsp;/* Estilos que solo se aplicaran si se cumple la condición */<br>
+                    }
+                </p>
+
+                <li><strong>Aplicación básica de Media Queries para pantallas de diferente tamaño</strong> Un uso
+                    típico de las media queries es adaptar el diseño a diferentes anchos de pantalla. Por ejemplo,
+                    puedes ajustar los estilos para pantallas grandes y pequeñas.</li>
+
+                <p class="code">
+                    /* Estilos para pantallas grandes (sobre los 768px de ancho) */<br>
+                    @media (min-width: 768px) {<br>
+                    &nbsp;body {<br>
+                    &nbsp;&nbsp;background-color: lightblue;<br>
+                    &nbsp;}<br>
+                    }<br>
+                    /* Estilos para pantallas pequeñas (bajo los 768px de ancho) */<br>
+                    @media (max-width: 767px) {<br>
+                    &nbsp;body {<br>
+                    &nbsp;&nbsp;background-color: lightgreen;<br>
+                    &nbsp;}<br>
+                    }
+
+                </p>
+
+                <li><strong>Tipos de condiciones más comunes en las Media Queries</strong> A continuación, veremos
+                    algunas de las condiciones más comunes que puedes utilizar dentro de las media queries:</li>
+                <ol type="a">
+                    <li><strong> Ancho de la pantalla (min-width y max-width):</strong> Estas condiciones se utilizan
+                        para aplicar estilos cuando la ventana del navegador tiene un ancho mínimo
+                        (<code>min-width</code>) o máximo (<code>max-width</code>).</li>
+
+                    <li><strong> Altura de la pantalla (min-height y max-height):</strong> Estas condiciones funcionan
+                        de manera similar a las de ancho, pero se basan en la altura de la ventana
+                        (<code>min-height</code> y <code>max-height</code>).</li>
+
+                    <li><strong> Orientación de la pantalla (orientation):</strong> Puedes utilizar la condición
+                        <code>orientation</code> para aplicar estilos diferentes si la pantalla está en orientación
+                        horizontal (<code>landscape</code>) o vertical (<code>portrait</code>).</li>
+                </ol>
+
+                <p class="code"><br>
+                    @media (min-width: 600px) {<br>
+                    &nbsp;/* Estilos para pantallas con un ancho de 600 píxeles o más */<br>
+                    }<br>
+                    @media (max-width: 600px) {<br>
+                    &nbsp;/* Estilos para pantallas con un ancho de hasta a 600 píxeles */<br>
+                    }<br>
+                    @media (min-height: 500px) {<br>
+                    &nbsp;/* Estilos para pantallas con un alto de 500 píxeles o más */<br>
+                    }<br>
+                    @media (orientation: landscape) {<br>
+                    &nbsp;/* Estils pera dispositivos en orientación horizontal */<br>
+                    }<br>
+                    @media (orientation: portrait) {<br>
+                    &nbsp;/* Estils pera dispositivos en orientación vertical */<br>
+                    }
+                </p>
+
+                <li><strong>Uso de múltiples condiciones en una Media Query</strong> Puedes combinar varias
+                    condiciones en una sola media query mediante las palabras clave <code>and</code> u <code>only</code>
+                    para especificar estilos muy concretos.</li>
+
+                <p class="code">
+                    @media (min-width: 600px) and (max-width: 1200px) {<br>
+                    &nbsp;/* Estilos sólo aplicados si la pantalla tiene entre 600 y 1200 píxeles de ancho */<br>
+                    }
+                </p>
+            </ol>
+
         </section>
     </div>
-    </body>
+</body>
+
 </html>
