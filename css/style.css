@@ -252,3 +252,15 @@ input{
     background-color: yellow;
     color: var(--negroCustom1);
 }
+
+#margen{
+    margin: 10px;
+}
+
+#relleno{
+    padding: 20px;
+}
+
+#borde{
+    border: 1px dashed blue;
+}

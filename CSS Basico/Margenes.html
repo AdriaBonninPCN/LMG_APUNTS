@@ -14,10 +14,87 @@
             <img src="../Logo/estrella.svg" alt="Logo Estrella">
         </div>
     </header>
-    <div class = "contenido">
+    <div class="contenido">
         <h1>Margenes, Rellenos y Bordes</h1>
         <section>
+            <p class="informacion">
+                Los <strong>márgenes</strong> (margin), los <strong>rellenos</strong> (padding) y los
+                </strong>bordes</strong> (border) son parte del de <strong> el modelo de caja</strong> en
+                CSS, que describe cómo se disponen los elementos en la página. Estas propiedades permiten ajustar el
+                espacio exterior e interior de un elemento, así como definir sus límites visuales con una frontera.
+            </p>
+
+            <ul class="informacion">
+                <li><strong>Márgenes (margin):</strong> La propiedad margin controla el espacio exterior de un elemento,
+                    es decir, el espacio que hay entre un elemento y los otros elementos que lo rodean. Los márgenes se
+                    pueden definir de manera individual para cada uno de los cuatro lados del elemento (superior,
+                    derecho, inferior, izquierdo) o de manera global para todos los lados a la vez.</li>
+                <p class="code" id="margen">
+                    p {<br>
+                    &nbsp;margin: 10px; /* Aplica un marge de 10 píxels a tots els costats */<br>
+                    }<br>
+                    h1 {<br>
+                    &nbsp;margin-top: 20px; /* Margen superior de 20 píxeles */<br>
+                    &nbsp;margin-bottom: 10px; /* Marge inferior de 10 píxeles */<br>
+                    &nbsp;margin-left: 10px; /* Margen izquierdo de 10 píxeles */<br>
+                    &nbsp;margin-right: 10px; /* Margen derecho de 10 píxeles */<br>
+                    }
+                </p>
+                <li><strong>Rellenos (padding):</strong> La propiedad padding controla el espacio interior de un
+                    elemento, es decir, el espacio entre el contenido de un elemento (como texto o imágenes) y sus
+                    fronteras. Al igual que con los márgenes, los rellenos se pueden definir para todos los lados o para
+                    cada uno individualmente.</li>
+                <p class="code" id="relleno">
+                    div {<br>
+                    &nbsp;padding: 20px; /* Aplica un relleno de 20 píxeles a todos los lados */<br>
+                    }<br>
+                    h2 {<br>
+                    &nbsp;padding-left: 15px; /* Aplica un relleno de 15 píxeles al lado izquierdo */<br>
+                    }
+
+                </p>
+                <li><strong>Bordes (border):</strong> La propiedad border se utiliza para añadir un borde alrededor de
+                    un elemento. Esta propiedad tiene varios subatributos:
+                    <ul>
+                        <li>Ancho del borde (border-width): define el grosor del borde.</li>
+                        <li>Estilo del borde (border-style): puede ser solid (sólido), dashed (rayado), dotted (puntos),
+                            etc.</li>
+                        <li>Color del borde (border-color): especifica el color del borde.</li>
+                    </ul>
+                </li>
+                <p class="code" id="borde">
+                    div {<br>
+                    &nbsp;border: 2px solid black; /* Borde de 2 píxeles, sólido i negro */<br>
+                    }<br>
+                    p {<br>
+                    &nbsp;border: 1px dashed blue; /* Borde d'1 píxel, a rayas i azul */<br>
+                    }
+                </p>
+            </ul>
+            <h3>Unidades comunes</h3>
+            <ul class = "informacion">
+                <li><strong>Píxeles (px):</strong> Unidad fija, representa un punto en la pantalla. Ejemplo: margin:
+                    20px;</li>
+
+                <li><strong>Ems (em):</strong> Unidad relativa al tamaño de la fuente del elemento padre. Ejemplo:
+                    padding: 2em; (2 veces el tamaño de la fuente).</li>
+
+                <li><strong>Rems (rem):</strong> Unidad relativa al tamaño de la fuente del elemento raíz (html).
+                    Ejemplo: margin: 1.5rem; (1.5 veces el tamaño de la fuente raíz).</li>
+
+                <li><strong>Porcentaje (%):</strong> Relativo al ancho o alto del contenedor padre. Ejemplo: padding:
+                    5%; (5% del ancho del contenedor).</li>
+
+                <li><strong>Viewports (vw, vh):</strong> Relativo al tamaño de la ventana visible. Ejemplo: margin: 5vw;
+                    (5% del ancho del viewport).</li>
+
+                <li><strong>Bordes (border-width):</strong> Grosores predeterminados: thin, medium, thick o valores como
+                    px. Ejemplo: border: thick solid black;</li>
+            </ul>
+
+
         </section>
     </div>
-    </body>
+</body>
+
 </html>
