@@ -14,13 +14,101 @@
             <img src="../Logo/estrella.svg" alt="Logo Estrella">
         </div>
     </header>
-    <div class = "contenido">
+    <div class="contenido">
         <h1>
             Propiedades de Texto y Fuentes
         </h1>
         <section>
-            
+            <p>
+                El CSS permite controlar cómo se muestran los textos dentro de una página web. Con diversas propiedades,
+                podemos cambiar la fuente, el color, la alineación, el tamaño del texto y otros aspectos visuales para
+                mejorar la legibilidad y la estética del contenido.
+            </p>
+
+            <ul class="informacion">
+                <li><strong>Propiedad font-family:</strong> Define el tipo de letra (tipografía) que se utilizará para
+                    un elemento de texto. Puedes especificar una o más fuentes, y el navegador aplicará la primera que
+                    esté disponible en el sistema del usuario.</li>
+                <p class="code">
+                    p {<br>
+                    &nbsp;font-family: "Arial", sans-serif;<br>
+                    }
+
+                </p>
+
+                <li><strong>Propiedad font-size:</strong> Controla el tamaño de la letra. Los valores se pueden definir
+                    en diversas unidades, como píxeles (px), ems (em), puntos (pt) o porcentajes (%).</li>
+                <p class="code">
+                    h1 {<br>
+                    &nbsp;font-size: 32px;<br>
+                    }<br>
+                    p {<br>
+                    &nbsp;font-size: 14px;<br>
+                    }
+                </p>
+
+                <li><strong>Propiedad color:</strong> Define el color del texto. Se pueden utilizar nombres de colores
+                    predefinidos, valores en hexadecimal o el sistema de colores RGB o RGBA.</li>
+                <p class="code">
+                    p {<br>
+                    &nbsp;color: red; /* Con nombre de color */<br>
+                    }<br>
+                    h1 {<br>
+                    &nbsp;color: #00FF00; /* Con nombre hexadecimal */<br>
+                    }<br>
+                    span {<br>
+                    &nbsp;color: rgb(0, 0, 255); /* Con codigo RGB */<br>
+                    }
+
+                </p>
+
+                <li><strong>Propiedad text-align:</strong> Controla la alineación del texto dentro de un elemento. Los
+                    valores más comunes son:
+                    <ul>
+                        <li>left (izquierda)</li>
+                        <li>right (derecha)</li>
+                        <li>center (centrado)</li>
+                        <li>justify (justificado)</li>
+                    </ul>
+                </li>
+                <p class="code">
+                    h1 {<br>
+                    &nbsp;text-align: center;<br>
+                    }<br>
+                    p {<br>
+                    &nbsp;text-align: justify;<br>
+                    }
+                </p>
+
+                <li><strong>Propiedad font-weight:</strong> Controla el grosor de la letra. Los valores comunes son:
+                    <ul>
+                        <li>normal: por defecto.</li>
+                        <li>bold: texto en negrita.</li>
+                        <li>Números entre 100 y 900, donde 400 es el valor por defecto y 700 representa negrita.</li>
+                    </ul>
+                </li>
+                <p class="code">
+                    p {<br>
+                    &nbsp;font-weight: bold;<br>
+                    }
+                </p>
+
+                <li><strong>Propiedad font-style:</strong> Controla el estilo de la fuente, como si el texto será normal
+                    o en cursiva. Los valores más comunes son:
+                    <ul>
+                        <li>normal: texto normal.</li>
+                        <li>italic: texto en cursiva.</li>
+                        <li>oblique: texto inclinado.</li>
+                    </ul>
+                </li>
+                <p class="code">
+                    span {<br>
+                    &nbsp;font-style: italic;<br>
+                    }
+                </p>
+            </ul>
         </section>
     </div>
-    </body>
+</body>
+
 </html>
