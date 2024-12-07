@@ -14,10 +14,132 @@
             <img src="../Logo/estrella.svg" alt="Logo Estrella">
         </div>
     </header>
-    <div class = "contenido">
+    <div class="contenido">
         <h1>Layouts avanzados con Flexbox y Grid</h1>
         <section>
+            <h2>
+                Flexbox
+            </h2>
+            <p>Casos comunes para felxbox:</p>
+            <ul class="informacion">
+                <li>Cuando quieres alinear elementos en una columna, como botones en una barra de navegación o imágenes
+                    en una galería.</li>
+                <li>Cuando quieres distribuir el espacio entre elementos en una fila (por ejemplo, centrando un elemento
+                    o espaciándolos uniformemente).</li>
+                <li>Cuando los elementos deben crecer o reducirse para llenar el espacio disponible, como en una barra
+                    lateral o una fila de cartas.</li>
+            </ul>
+
+
+            <h2>
+                Grid
+            </h2>
+            <p>Casos comunes para Grid:</p>
+            <ul class="informacion">
+                <li>Cuando quieres crear una página con una estructura compleja (como una página con encabezado, barra
+                    lateral, contenido principal y pie de página).</li>
+                <li>Cuando tienes un diseño en formato de cuadrícula con filas y columnas, como un tablero de fotos o un
+                    diseño de tarjetas de productos.</li>
+                <li>Cuando quieres controlar exactamente dónde va cada elemento en la cuadrícula (puedes colocar
+                    elementos en cualquier celda de la cuadrícula).</li>
+            </ul>
+
+            <p>Cuando se trata de crear diseños flexibles, adaptables y organizados, Flexbox y CSS Grid son las dos
+                herramientas más poderosas de CSS. Con ellas puedes controlar la disposición de los elementos en la
+                página, ya sea en una fila, columna o en cuadrículas complejas, adaptando los elementos fácilmente a
+                diferentes tamaños de pantalla y requisitos.
+            </p>
+
+            <ul class="informacion">
+                <li>Flexbox avanzado: alineación, flex-shrink, align-self
+                    Flexbox es una herramienta muy flexible para crear diseños en fila o columna, donde los elementos se
+                    alinean y ajustan automáticamente según el espacio disponible.
+                    <ul>
+                        <li>flex-shrink: Controla cómo se reduce el tamaño de un elemento cuando no hay suficiente
+                            espacio disponible. Valores más grandes permiten que el elemento se reduzca más.</li>
+                        <p class="code">
+                            element {<br>
+                            &nbsp;flex-shrink: 1; /* Permite que el elemento se reduzca cuando no hay espacio suficiente
+                            */<br>
+                            }
+
+                        </p>
+                        <li>align-self: Permite que un solo elemento en un contenedor flex tenga una alineación
+                            diferente al resto de los elementos. Los valores pueden ser flex-start, flex-end, center,
+                            baseline o stretch.</li>
+                        <p class="code">
+                            .element {<br>
+                            &nbsp;align-self: center; /* Centra el elemento individualmente dentro del contenedor */<br>
+                            }
+                        </p>
+                    </ul>
+                </li>
+                <li>Grid Layout: creación de cuadrículas: CSS Grid Layout es una herramienta más potente que Flexbox
+                    cuando se trata de crear layouts en dos dimensiones (fila y columna). Grid permite colocar elementos
+                    en una cuadrícula con mucha precisión, controlando el tamaño de las filas y columnas, y permitiendo
+                    que los elementos se ajusten al espacio disponible.</li>
+
+                <p>Propiedades clave en CSS Grid:</p>
+                <ul>
+                    <li>grid-template-columns y grid-template-rows: Definen el número y el tamaño de las columnas y las
+                        filas dentro del contenedor grid.</li>
+                        <p class = "code">
+                            .grid {<br>
+                            &nbsp;display: grid;<br>
+                            &nbsp;grid-template-columns: 1fr 2fr 1fr; /* Define 3 columnas con medidas flexibles */<br>
+                            &nbsp;grid-template-rows: 100px auto; /* Define dos columnas, una fija y una automatica */<br>
+                              }
+                              
+                        </p>
+                    <li>grid-column y grid-row: Permiten que un elemento ocupe varias columnas o filas de la cuadrícula.
+                    </li>
+                    <p class = "code">
+                        element-gran {<br>
+                            &nbsp;grid-column: span 2; /* El elemento ocupará 2 columnas */<br>
+                            &nbsp;grid-row: span 1; /* El elemento solo ocupará 1 fila */<br>
+                           }
+                    </p>
+                    <li>gap: Define el espacio entre las filas y columnas de la cuadrícula.</li>
+                    <p class = "code">
+                        .grid {<br>
+                            &nbsp;gap: 20px; /* Define un espacio de 20 pixeles entre las filas i las columnas */<br>
+                           }
+                    </p>
+                </ul>
+
+                <p>Ejemplo básico con CSS Grid</p>
+                <p class = "code">
+                    <img src="../Recursos/gridcss.PNG">
+                </p>
+                <p>En este ejemplo:</p>
+                <ul>
+                    <li>La cuadricula tiene 3 columnas iguales</li>
+                    <li>El elemento 2 ocupa dos coulumnas gracias a grid-column: span 2.</li>
+                </ul>
+
+
+                <li>Uso combinado de Flexbox y Grid: Aunque Flexbox y Grid se pueden utilizar por separado, a menudo es
+                    útil combinarlos para obtener lo mejor de ambos. Por ejemplo, puedes utilizar Grid para definir la
+                    disposición general de una página (filas y columnas) y utilizar Flexbox dentro de algunas áreas para
+                    ajustar la alineación de los elementos.</li>
+
+                    <p class = "code">
+                        <img src = "../Recursos/flexboxgrid.PNG">
+                    </p>
+
+                <p>En este ejemplo:</p>
+                <ul>
+                    <li>El layout general se estructura con Grid, dividiendo la página en columnas.</li>
+                    <li>Dentro de una de las celdas del Grid, se utiliza Flexbox para alinear los elementos en una fila.
+                    </li>
+                </ul>
+
+
+            </ul>
+
+
         </section>
     </div>
-    </body>
+</body>
+
 </html>
