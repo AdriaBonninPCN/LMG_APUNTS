@@ -209,3 +209,11 @@ section .buenasPracticas li{
     text-decoration: underline;
     cursor: pointer;
 }
+
+select option{
+ color: var(--negroCustom1);   
+}
+
+button{
+    color: var(--negroCustom1);
+}

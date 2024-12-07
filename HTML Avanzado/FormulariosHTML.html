@@ -3,221 +3,179 @@
 
 <head>
     <title>Formularios en HTML</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
     <header>
-        <h1>Formularios con HTML</h1>
+        <div class="imageDiv">
+            <img src="../Logo/estrella.svg" alt="Logo Estrella">
+        </div>
     </header>
-    <section>
-        <p>Los formularios son una de las herramientas más importantes de HTML porque permiten a los usuarios enviar
-            datos a
-            un servidor. Con HTML5, los formularios han ganado nuevas funcionalidades que mejoran su usabilidad i
-            validación.</p>
-        <p>Un formulario se crea con la etiqueta <b>&lt;form&gt;</b>, que actua como el contenedor de todos los
-            elementos de
-            entrada (texto, botones, selecciones, ...).</p>
-        <p>Cada campo del formulario se envia como datos a un servidor cuando el usuario lo envia.</p>
-        <table border="5" cellpadding="10" cellspacing="0">
+    <div class="contenido">
+        <h1>Formularios con HTML</h1>
+        <section>
+            <p class="informacion">Los formularios son una de las herramientas más importantes de HTML porque permiten a
+                los usuarios enviar
+                datos a
+                un servidor. Con HTML5, los formularios han ganado nuevas funcionalidades que mejoran su usabilidad i
+                validación.</p>
+            <p>Un formulario se crea con la etiqueta <b>&lt;form&gt;</b>, que actua como el contenedor de todos los
+                elementos de
+                entrada (texto, botones, selecciones, ...).</p>
+            <p>Cada campo del formulario se envia como datos a un servidor cuando el usuario lo envia.</p>
             <p>Ejemplo:</p>
-            <tp>
-                <td>
-                    <ul>
-                        &lt;form action="submit.php" method="POST"&gt;<br>
-                        &emsp;&lt;!-- Campos del formulario --&gt;<br>
-                        &lt;/form&gt;
-                    </ul>
-                </td>
-            </tp>
-        </table>
-    </section>
-    <section>
-        <h3>&lt;input&gt;</h3>
-        <p>La etiqueta <b>&lt;input&gt;</b> es el elemento más versátil para crear campos de entrada. El tipo de campo
-            se
-            define con el atributo <b>"type"</b></p>
-        <table border="5" cellpadding="10" cellspacing="0">
+            <p class="code">
+                &lt;form action="submit.php" method="POST"&gt;<br>
+                &emsp;&lt;!-- Campos del formulario --&gt;<br>
+                &lt;/form&gt;
+            </p>
+        </section>
+        <section>
+            <h3>&lt;input&gt;</h3>
+            <p>La etiqueta <b>&lt;input&gt;</b> es el elemento más versátil para crear campos de entrada. El tipo de
+                campo
+                se
+                define con el atributo <b>"type"</b></p>
+
             <p>Ejemplo:</p>
-            <tp>
-                <td>
-                    <ul>
-                        &lt;input type="text" name="nombre" placeholder="Escribe tu nombre"&gt;<br><br>
-                        &lt;input type="email" name="email" placeholder="Escribe tu correo"&gt;<br><br>
-                        &lt;input type="password" name="password" placeholder="Escribe tu contraseña"&gt;
-                    </ul>
-                </td>
-            </tp>
-        </table>
-        <p>
+            <p class="code">
+                &lt;input type="text" name="nombre" placeholder="Escribe tu nombre"&gt;<br><br>
+                &lt;input type="email" name="email" placeholder="Escribe tu correo"&gt;<br><br>
+                &lt;input type="password" name="password" placeholder="Escribe tu contraseña"&gt;
+            </p>
+
             <!-- NO HACE FALTA QUE ESTEN DENTRO DE UN FORMULARIO PARA QUE APAREZCAN :D -->
             <!-- <form action="" method=""> -->
             <input type="text" name="nombre" placeholder="Escribe tu nombre">
             <input type="email" name="email" placeholder="Escribe tu correo">
             <input type="password" name="password" placeholder="Escribe tu contraseña">
             <!-- </form> -->
-        </p>
-        <!--  -->
-    </section>
-    <section>
-        <h3>&lt;label&gt;</h3>
-        <p>La etiqueta <b>&lt;label&gt;</b> se utiliza para etiquetar campos de formulario i mejorar la accesibilidad.
-        </p>
-        <table border="5" cellpadding="10" cellspacing="0">
+            </p>
+            <!--  -->
+        </section>
+        <section>
+            <h3>&lt;label&gt;</h3>
+            <p class="informacion">La etiqueta <b>&lt;label&gt;</b> se utiliza para etiquetar campos de formulario i
+                mejorar la
+                accesibilidad.
+            </p>
             <p>Ejemplo:</p>
-            <tp>
-                <td>
-                    <ul>
-                        &lt;label for="nombre"&gt;Nombre:&lt;/label&gt;<br>
-                        &lt;input type="text" id="nombre" name="nombre"&gt;
-                    </ul>
-                </td>
-            </tp>
-        </table>
-        <p>
-            <!-- <form action="" method=""> -->
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre">
-            <!-- </form> -->
-        </p>
-    </section>
-    <section>
-        <h3>&lt;textarea&gt;</h3>
-        <p>Para textos largos, como comentarios o descripciones, se utiliza <b>&lt;textarea&gt;</b>, que permite un area
-            de texto más grande.</p>
-        <table border="5" cellpadding="10" cellspacing="0">
+            <table border="5" cellpadding="10" cellspacing="0">
+                <p class="code">
+                    &lt;label for="nombre"&gt;Nombre:&lt;/label&gt;<br>
+                    &lt;input type="text" id="nombre" name="nombre"&gt;
+                </p>
+
+                <!-- <form action="" method=""> -->
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre">
+                <!-- </form> -->
+                </p>
+        </section>
+        <section>
+            <h3>&lt;textarea&gt;</h3>
+            <p>Para textos largos, como comentarios o descripciones, se utiliza <b>&lt;textarea&gt;</b>, que permite un
+                area
+                de texto más grande.</p>
             <p>Ejemplo:</p>
-            <tp>
-                <td>
-                    <ul>
-                        &lt;textarea name="comentario" rows="4" cols="50" placeholder="Escribe tu comentario
-                        aquí"&gt;&lt/textarea&gt;
-                    </ul>
-                </td>
-            </tp>
-        </table><br>
-        <textarea name="comentario" rows="4" cols="50" placeholder="Escribe tu comentario aquí"></textarea>
-        <p>
-    </section>
-    <section>
-        <h3>&lt;select&gt y &lt;option&gt;</h3>
-        <p><b>&lt;select&gt;</b> se usa para crear listas desplegables de selección. Cada opción dentre de la lista se
-            define com <b>&lt;option&gt;</b>.</p>
-        <table border="5" cellpadding="10" cellspacing="0">
+            <p class="code">
+                &lt;textarea name="comentario" rows="4" cols="50" placeholder="Escribe tu comentario
+                aquí"&gt;&lt/textarea&gt;
+            </p>
+            <textarea name="comentario" rows="4" cols="50" placeholder="Escribe tu comentario aquí"></textarea>
+            <p>
+        </section>
+        <section>
+            <h3>&lt;select&gt y &lt;option&gt;</h3>
+            <p><b>&lt;select&gt;</b> se usa para crear listas desplegables de selección. Cada opción dentre de la lista
+                se
+                define com <b>&lt;option&gt;</b>.</p>
             <p>Ejemplo:</p>
-            <tp>
-                <td>
-                    <ul>
-                        &lt;label for="ciudad"&gt;Selecciona tu ciudad:&lt;/label&gt;<br>
-                        &lt;select id="ciudad" name="ciudad"&gt;<br>
-                        &emsp;&lt;option value="barcelona"&gt;Barcelona&lt;/option&gt;<br>
-                        &emsp;&lt;option value="madrid"&gt;Madrid&lt;/option&gt;<br>
-                        &emsp;&lt;option value="valencia"&gt;Valencia&lt;/option&gt;<br>
-                        &lt;/select&gt;
-                    </ul>
-                </td>
-            </tp>
-        </table><br>
-        <label for="ciudad">Selecciona tu ciudad:</label>
-        <select id="ciudad" name="ciudad">
-             <option value="barcelona">Barcelona</option>
-             <option value="madrid">Madrid</option>
-             <option value="valencia">Valencia</option>
-        </select>
-    </section>
-    <section>
-        <h3>&lt;multiple&gt;</h3>
-        <p>El atriubto <b>&lt;multiple&gt;</b> se usa para listas desplegables de selección. Permite seleccionar
-            múltiples opciones en una lista de selección.</p>
-        <table border="5" cellpadding="10" cellspacing="0">
+            <p class="code">
+                &lt;label for="ciudad"&gt;Selecciona tu ciudad:&lt;/label&gt;<br>
+                &lt;select id="ciudad" name="ciudad"&gt;<br>
+                &emsp;&lt;option value="barcelona"&gt;Barcelona&lt;/option&gt;<br>
+                &emsp;&lt;option value="madrid"&gt;Madrid&lt;/option&gt;<br>
+                &emsp;&lt;option value="valencia"&gt;Valencia&lt;/option&gt;<br>
+                &lt;/select&gt;
+            </p>
+            <label for="ciudad">Selecciona tu ciudad:</label>
+            <select id="ciudad" name="ciudad">
+                 <option value="barcelona">Barcelona</option>
+                 <option value="madrid">Madrid</option>
+                 <option value="valencia">Valencia</option>
+            </select>
+        </section>
+        <section>
+            <h3>&lt;multiple&gt;</h3>
+            <p>El atriubto <b>&lt;multiple&gt;</b> se usa para listas desplegables de selección. Permite seleccionar
+                múltiples opciones en una lista de selección.</p>
             <p>Ejemplo:</p>
-            <tp>
-                <td>
-                    <ul>
-                        &lt;select name="intereses" multiple&gt;<br>
-                        &lt;option value="programacion"&gt;Programación&lt;/option&gt;<br>
-                        &lt;option value="diseno"&gt;Diseño&lt;/option&gt;<br>
-                        &lt;option value="marketing"&gt;Marketing&lt;/option&gt;<br>
-                        &lt;/select&gt;
-                    </ul>
-                </td>
-            </tp>
-        </table><br>
-        <select name="intereses" multiple>
-            <option value="programacion">Programación</option>
-            <option value="diseno">Diseño</option>
-            <option value="marketing">Marketing</option>
-        </select>
-    </section>
-    <section>
-        <h3>&lt;button&gt;</h3>
-        <p>&lt;button&gt; se utiliza para crear botones de enviamiento o otras acciones dentro del formulario.</p>
-        <table border="5" cellpadding="10" cellspacing="0">
+            <p class="code">
+                &lt;select name="intereses" multiple&gt;<br>
+                &lt;option value="programacion"&gt;Programación&lt;/option&gt;<br>
+                &lt;option value="diseno"&gt;Diseño&lt;/option&gt;<br>
+                &lt;option value="marketing"&gt;Marketing&lt;/option&gt;<br>
+                &lt;/select&gt;
+            </p>
+            <select name="intereses" multiple>
+                <option value="programacion">Programación</option>
+                <option value="diseno">Diseño</option>
+                <option value="marketing">Marketing</option>
+            </select>
+        </section>
+        <section>
+            <h3>&lt;button&gt;</h3>
+            <p>&lt;button&gt; se utiliza para crear botones de enviamiento o otras acciones dentro del formulario.</p>
             <p>Ejemplo:</p>
-            <tp>
-                <td>
-                    <ul>
-                        &lt;button type="submit"&gt;Enviar&lt;/button&gt;
-                    </ul>
-                </td>
-            </tp>
-        </table><br>
-        <button type="submit">Enviar</button>
-    </section>
-    <section>
-        <h3>Radio buttons</h3>
-        <p>Los <b>Radio buttons</b> permiten seleccionar una opción entre un cojunto de posibilidades.</p>
-        <table border="5" cellpadding="10" cellspacing="0">
+            <p class="code">
+                &lt;button type="submit"&gt;Enviar&lt;/button&gt;
+            </p>
+            <button type="submit">Enviar</button>
+        </section>
+        <section>
+            <h3>Radio buttons</h3>
+            <p>Los <b>Radio buttons</b> permiten seleccionar una opción entre un cojunto de posibilidades.</p>
             <p>Ejemplo:</p>
-            <tp>
-                <td>
-                    <ul>
-                        &lt;label&gt;&lt;input type="radio" name="sexo" value="hombre"&gt; Hombre&lt;/label&gt;<br>
-                        &lt;label&gt;&lt;input type="radio" name="sexo" value="mujer"&gt; Mujer&lt;/label&gt;
-                    </ul>
-                </td>
-            </tp>
-        </table><br>
-        <label><input type="radio" name="sexo" value="hombre"> Hombre</label>
-        <label><input type="radio" name="sexo" value="mujer"> Mujer</label>
-    </section>
-    <section>
-        <h3>&lt;checkboxes&gt;</h3>
-        <p>Las <b>checkboxes</b> permiten seleccionar diversas opciones independientes.</p>
-        <table border="5" cellpadding="10" cellspacing="0">
+            <p class="code">
+                &lt;label&gt;&lt;input type="radio" name="sexo" value="hombre"&gt; Hombre&lt;/label&gt;<br>
+                &lt;label&gt;&lt;input type="radio" name="sexo" value="mujer"&gt; Mujer&lt;/label&gt;
+            </p>
+            <label><input type="radio" name="sexo" value="hombre"> Hombre</label>
+            <label><input type="radio" name="sexo" value="mujer"> Mujer</label>
+        </section>
+        <section>
+            <h3>&lt;checkboxes&gt;</h3>
+            <p>Las <b>checkboxes</b> permiten seleccionar diversas opciones independientes.</p>
             <p>Ejemplo:</p>
-            <tp>
-                <td>
-                    <ul>
-                        &lt;label&gt;&lt;input type="checkbox" name="subscripcion" value="noticias"&gt; Suscribeme a las
-                        noticias&lt;/label&gt;<br>
-                        &lt;label&gt;&lt;input type="checkbox" name="subscripcion" value="ofertas"&gt; Subscribeme a las
-                        ofertas&lt;/label&gt;
-                    </ul>
-                </td>
-            </tp>
-        </table>
-        <label><input type="checkbox" name="subscripcion" value="noticias"> Suscribeme a las noticias</label>
-        <label><input type="checkbox" name="subscripcion" value="ofertas"> Subscribeme a las ofertas</label>
-        <p>Buenas prácticas crear formularios en HTML. Siguiendo estas recomendaciones mejoraremos la experiencia del
-            usuario, la accesibilidad, la seguridad i la eficiencia de los formularios para nuestras páginas web.</p>
-        <table border="5" cellpadding="10" cellspacing="0">
-            <tp>
-                <td>
-                    <b>Buenas prácticas para hacer formularios en HTML:<br></b>
-                    <ul>
-                        <li>Usar la etiqueta &lt;label&gt; para mejorar la accesibilidad.</li>
-                        <li>Utilizar los tipos de entrada adecuados.</li>
-                        <li>Definir el atributo required en los campos obligatorios.</li>
-                        <li>Añadir la validación nativa con pattern i min/max.</li>
-                        <li>Usar placeholder para proporcionar pistas al usuario.</li>
-                        <li>Organizar los campos del formulario en grupos lógicos.</li>
-                        <li>Proporcionar información clara sobre los errores.</li>
-                        <li>Utilizar autocomplete para mejorar la experiencia del usuario.</li>
-                    </ul>
-                </td>
-            </tp>
-        </table>
-    </section>
+            <p class="code">
+                &lt;label&gt;&lt;input type="checkbox" name="subscripcion" value="noticias"&gt; Suscribeme a
+                las
+                noticias&lt;/label&gt;<br>
+                &lt;label&gt;&lt;input type="checkbox" name="subscripcion" value="ofertas"&gt; Subscribeme a
+                las
+                ofertas&lt;/label&gt;
+            </p>
+            <label><input type="checkbox" name="subscripcion" value="noticias"> Suscribeme a las noticias</label>
+            <label><input type="checkbox" name="subscripcion" value="ofertas"> Subscribeme a las ofertas</label>
+            <div class="buenasPracticas">
+                <b>Buenas prácticas para hacer formularios en HTML:<br></b>
+                <ul>
+                    <li>Usar la etiqueta &lt;label&gt; para mejorar la accesibilidad.</li>
+                    <li>Utilizar los tipos de entrada adecuados.</li>
+                    <li>Definir el atributo required en los campos obligatorios.</li>
+                    <li>Añadir la validación nativa con pattern i min/max.</li>
+                    <li>Usar placeholder para proporcionar pistas al usuario.</li>
+                    <li>Organizar los campos del formulario en grupos lógicos.</li>
+                    <li>Proporcionar información clara sobre los errores.</li>
+                    <li>Utilizar autocomplete para mejorar la experiencia del usuario.</li>
+                </ul>
+            </div>
+        </section>
+    </div>
 </body>
 
 </html>
